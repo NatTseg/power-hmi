@@ -2,7 +2,7 @@
   "custom": {},
   "params": {},
   "props": {
-    "defaultSize": { "width": 860, "height": 480 }
+    "defaultSize": { "width": 860, "height": 500 }
   },
   "root": {
     "meta": { "name": "root" },
@@ -20,61 +20,84 @@
       {
         "meta": { "name": "Canvas" },
         "type": "ia.container.coord",
-        "position": { "basis": "480px", "shrink": 0 },
+        "position": { "basis": "490px", "shrink": 0 },
         "props": {
-          "style": {
-            "width": "760px",
-            "height": "480px",
-            "position": "relative"
-          }
+          "style": { "width": "760px", "height": "490px", "position": "relative" }
         },
         "children": [
           {
+            "meta": { "name": "SwitchgearEnclosure" },
+            "type": "ia.display.label",
+            "position": { "x": 42, "y": 44, "width": 674, "height": 140 },
+            "props": {
+              "text": "",
+              "style": {
+                "backgroundColor": "transparent",
+                "border": "1px dashed #1B2B4B",
+                "borderRadius": "4px"
+              }
+            }
+          },
+          {
+            "meta": { "name": "Label_EnclosureTitle" },
+            "type": "ia.display.label",
+            "position": { "x": 50, "y": 48, "width": 340, "height": 14 },
+            "props": {
+              "text": "SWITCHGEAR MV-1  |  13.8kV  |  1200A  |  25kA",
+              "style": {
+                "fontSize": "9px",
+                "fontWeight": "600",
+                "color": "#2D4A7A",
+                "letterSpacing": "0.5px"
+              }
+            }
+          },
+          {
             "meta": { "name": "LeftFeederLine" },
             "type": "ia.display.label",
-            "position": { "x": 159, "y": 0, "width": 2, "height": 120 },
+            "position": { "x": 159, "y": 20, "width": 2, "height": 100 },
             "props": { "text": "", "style": { "backgroundColor": "#2D4A7A" } }
           },
           {
             "meta": { "name": "RightFeederLine" },
             "type": "ia.display.label",
-            "position": { "x": 559, "y": 0, "width": 2, "height": 120 },
+            "position": { "x": 559, "y": 20, "width": 2, "height": 100 },
             "props": { "text": "", "style": { "backgroundColor": "#2D4A7A" } }
           },
           {
             "meta": { "name": "G1BranchLine" },
             "type": "ia.display.label",
-            "position": { "x": 159, "y": 127, "width": 2, "height": 148 },
+            "position": { "x": 159, "y": 151, "width": 2, "height": 124 },
             "props": { "text": "", "style": { "backgroundColor": "#2D4A7A" } }
           },
           {
             "meta": { "name": "G2BranchLine" },
             "type": "ia.display.label",
-            "position": { "x": 339, "y": 127, "width": 2, "height": 148 },
+            "position": { "x": 339, "y": 151, "width": 2, "height": 124 },
             "props": { "text": "", "style": { "backgroundColor": "#2D4A7A" } }
           },
           {
             "meta": { "name": "TXBranchLine" },
             "type": "ia.display.label",
-            "position": { "x": 559, "y": 127, "width": 2, "height": 148 },
+            "position": { "x": 559, "y": 151, "width": 2, "height": 119 },
             "props": { "text": "", "style": { "backgroundColor": "#2D4A7A" } }
           },
           {
             "meta": { "name": "TXToLoadLine" },
             "type": "ia.display.label",
-            "position": { "x": 559, "y": 319, "width": 2, "height": 41 },
+            "position": { "x": 559, "y": 330, "width": 2, "height": 30 },
             "props": { "text": "", "style": { "backgroundColor": "#2D4A7A" } }
           },
           {
             "meta": { "name": "LoadFeeder1Line" },
             "type": "ia.display.label",
-            "position": { "x": 459, "y": 367, "width": 2, "height": 78 },
+            "position": { "x": 459, "y": 391, "width": 2, "height": 74 },
             "props": { "text": "", "style": { "backgroundColor": "#2D4A7A" } }
           },
           {
             "meta": { "name": "LoadFeeder2Line" },
             "type": "ia.display.label",
-            "position": { "x": 599, "y": 367, "width": 2, "height": 78 },
+            "position": { "x": 599, "y": 391, "width": 2, "height": 74 },
             "props": { "text": "", "style": { "backgroundColor": "#2D4A7A" } }
           },
           {
@@ -86,32 +109,176 @@
           {
             "meta": { "name": "LoadBus" },
             "type": "ia.display.label",
-            "position": { "x": 380, "y": 360, "width": 260, "height": 7 },
+            "position": { "x": 380, "y": 360, "width": 280, "height": 7 },
             "props": { "text": "", "style": { "backgroundColor": "#4F8EF7" } }
+          },
+          {
+            "meta": { "name": "CT_LeftFeeder" },
+            "type": "ia.display.label",
+            "position": { "x": 152, "y": 28, "width": 16, "height": 16 },
+            "props": {
+              "text": "",
+              "style": {
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #64748B",
+                "borderRadius": "50%"
+              }
+            }
+          },
+          {
+            "meta": { "name": "CTRatio_LeftFeeder" },
+            "type": "ia.display.label",
+            "position": { "x": 170, "y": 30, "width": 50, "height": 12 },
+            "props": {
+              "text": "1200:5",
+              "style": { "fontSize": "8px", "color": "#64748B" }
+            }
           },
           {
             "meta": { "name": "CB_LeftFeeder" },
             "type": "ia.display.label",
-            "position": { "x": 148, "y": 54, "width": 24, "height": 24 },
+            "position": { "x": 148, "y": 58, "width": 24, "height": 24 },
             "props": {
-              "text": "",
+              "text": "52",
               "style": {
                 "backgroundColor": "#060B18",
                 "border": "2px solid #4F8EF7",
-                "borderRadius": "3px"
+                "borderRadius": "3px",
+                "fontSize": "9px",
+                "fontWeight": "700",
+                "color": "#4F8EF7",
+                "textAlign": "center",
+                "lineHeight": "20px"
               }
+            }
+          },
+          {
+            "meta": { "name": "CB_LeftFeeder_Rating" },
+            "type": "ia.display.label",
+            "position": { "x": 140, "y": 83, "width": 40, "height": 12 },
+            "props": {
+              "text": "1200A",
+              "style": { "fontSize": "8px", "color": "#475569", "textAlign": "center" }
+            }
+          },
+          {
+            "meta": { "name": "PR_LeftFeeder" },
+            "type": "ia.display.label",
+            "position": { "x": 178, "y": 60, "width": 22, "height": 22 },
+            "props": {
+              "text": "PR",
+              "style": {
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #A78BFA",
+                "borderRadius": "50%",
+                "fontSize": "7px",
+                "fontWeight": "700",
+                "color": "#A78BFA",
+                "textAlign": "center",
+                "lineHeight": "19px"
+              }
+            }
+          },
+          {
+            "meta": { "name": "PM_LeftFeeder" },
+            "type": "ia.display.label",
+            "position": { "x": 205, "y": 60, "width": 22, "height": 22 },
+            "props": {
+              "text": "PM",
+              "style": {
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #06B6D4",
+                "borderRadius": "50%",
+                "fontSize": "7px",
+                "fontWeight": "700",
+                "color": "#06B6D4",
+                "textAlign": "center",
+                "lineHeight": "19px"
+              }
+            }
+          },
+          {
+            "meta": { "name": "CT_RightFeeder" },
+            "type": "ia.display.label",
+            "position": { "x": 552, "y": 28, "width": 16, "height": 16 },
+            "props": {
+              "text": "",
+              "style": {
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #64748B",
+                "borderRadius": "50%"
+              }
+            }
+          },
+          {
+            "meta": { "name": "CTRatio_RightFeeder" },
+            "type": "ia.display.label",
+            "position": { "x": 570, "y": 30, "width": 50, "height": 12 },
+            "props": {
+              "text": "1200:5",
+              "style": { "fontSize": "8px", "color": "#64748B" }
             }
           },
           {
             "meta": { "name": "CB_RightFeeder" },
             "type": "ia.display.label",
-            "position": { "x": 548, "y": 54, "width": 24, "height": 24 },
+            "position": { "x": 548, "y": 58, "width": 24, "height": 24 },
             "props": {
-              "text": "",
+              "text": "52",
               "style": {
                 "backgroundColor": "#060B18",
                 "border": "2px solid #4F8EF7",
-                "borderRadius": "3px"
+                "borderRadius": "3px",
+                "fontSize": "9px",
+                "fontWeight": "700",
+                "color": "#4F8EF7",
+                "textAlign": "center",
+                "lineHeight": "20px"
+              }
+            }
+          },
+          {
+            "meta": { "name": "CB_RightFeeder_Rating" },
+            "type": "ia.display.label",
+            "position": { "x": 540, "y": 83, "width": 40, "height": 12 },
+            "props": {
+              "text": "1200A",
+              "style": { "fontSize": "8px", "color": "#475569", "textAlign": "center" }
+            }
+          },
+          {
+            "meta": { "name": "PR_RightFeeder" },
+            "type": "ia.display.label",
+            "position": { "x": 578, "y": 60, "width": 22, "height": 22 },
+            "props": {
+              "text": "PR",
+              "style": {
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #A78BFA",
+                "borderRadius": "50%",
+                "fontSize": "7px",
+                "fontWeight": "700",
+                "color": "#A78BFA",
+                "textAlign": "center",
+                "lineHeight": "19px"
+              }
+            }
+          },
+          {
+            "meta": { "name": "PM_RightFeeder" },
+            "type": "ia.display.label",
+            "position": { "x": 605, "y": 60, "width": 22, "height": 22 },
+            "props": {
+              "text": "PM",
+              "style": {
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #06B6D4",
+                "borderRadius": "50%",
+                "fontSize": "7px",
+                "fontWeight": "700",
+                "color": "#06B6D4",
+                "textAlign": "center",
+                "lineHeight": "19px"
               }
             }
           },
@@ -120,11 +287,16 @@
             "type": "ia.display.label",
             "position": { "x": 148, "y": 127, "width": 24, "height": 24 },
             "props": {
-              "text": "",
+              "text": "52",
               "style": {
                 "backgroundColor": "#060B18",
                 "border": "2px solid #22C55E",
-                "borderRadius": "3px"
+                "borderRadius": "3px",
+                "fontSize": "9px",
+                "fontWeight": "700",
+                "color": "#22C55E",
+                "textAlign": "center",
+                "lineHeight": "20px"
               }
             }
           },
@@ -133,11 +305,16 @@
             "type": "ia.display.label",
             "position": { "x": 328, "y": 127, "width": 24, "height": 24 },
             "props": {
-              "text": "",
+              "text": "52",
               "style": {
                 "backgroundColor": "#060B18",
                 "border": "2px solid #22C55E",
-                "borderRadius": "3px"
+                "borderRadius": "3px",
+                "fontSize": "9px",
+                "fontWeight": "700",
+                "color": "#22C55E",
+                "textAlign": "center",
+                "lineHeight": "20px"
               }
             }
           },
@@ -146,38 +323,83 @@
             "type": "ia.display.label",
             "position": { "x": 548, "y": 127, "width": 24, "height": 24 },
             "props": {
-              "text": "",
+              "text": "52",
               "style": {
                 "backgroundColor": "#060B18",
                 "border": "2px solid #22C55E",
-                "borderRadius": "3px"
+                "borderRadius": "3px",
+                "fontSize": "9px",
+                "fontWeight": "700",
+                "color": "#22C55E",
+                "textAlign": "center",
+                "lineHeight": "20px"
               }
             }
           },
           {
-            "meta": { "name": "CB_Load1" },
+            "meta": { "name": "CT_G1" },
             "type": "ia.display.label",
-            "position": { "x": 448, "y": 367, "width": 24, "height": 24 },
+            "position": { "x": 152, "y": 160, "width": 16, "height": 16 },
             "props": {
               "text": "",
               "style": {
-                "backgroundColor": "#060B18",
-                "border": "2px solid #EAB308",
-                "borderRadius": "3px"
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #64748B",
+                "borderRadius": "50%"
               }
             }
           },
           {
-            "meta": { "name": "CB_Load2" },
+            "meta": { "name": "CTRatio_G1" },
             "type": "ia.display.label",
-            "position": { "x": 588, "y": 367, "width": 24, "height": 24 },
+            "position": { "x": 170, "y": 162, "width": 46, "height": 12 },
+            "props": {
+              "text": "600:5",
+              "style": { "fontSize": "8px", "color": "#64748B" }
+            }
+          },
+          {
+            "meta": { "name": "CT_G2" },
+            "type": "ia.display.label",
+            "position": { "x": 332, "y": 160, "width": 16, "height": 16 },
             "props": {
               "text": "",
               "style": {
-                "backgroundColor": "#060B18",
-                "border": "2px solid #EAB308",
-                "borderRadius": "3px"
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #64748B",
+                "borderRadius": "50%"
               }
+            }
+          },
+          {
+            "meta": { "name": "CTRatio_G2" },
+            "type": "ia.display.label",
+            "position": { "x": 350, "y": 162, "width": 46, "height": 12 },
+            "props": {
+              "text": "600:5",
+              "style": { "fontSize": "8px", "color": "#64748B" }
+            }
+          },
+          {
+            "meta": { "name": "CT_TX" },
+            "type": "ia.display.label",
+            "position": { "x": 552, "y": 160, "width": 16, "height": 16 },
+            "props": {
+              "text": "",
+              "style": {
+                "backgroundColor": "#0D1526",
+                "border": "1.5px solid #64748B",
+                "borderRadius": "50%"
+              }
+            }
+          },
+          {
+            "meta": { "name": "CTRatio_TX" },
+            "type": "ia.display.label",
+            "position": { "x": 570, "y": 162, "width": 46, "height": 12 },
+            "props": {
+              "text": "800:5",
+              "style": { "fontSize": "8px", "color": "#64748B" }
             }
           },
           {
@@ -193,12 +415,18 @@
                 "color": "#4F8EF7",
                 "fontSize": "18px",
                 "fontWeight": "700",
-                "display": "flex",
-                "alignItems": "center",
-                "justifyContent": "center",
                 "textAlign": "center",
                 "lineHeight": "40px"
               }
+            }
+          },
+          {
+            "meta": { "name": "GND_G1" },
+            "type": "ia.display.label",
+            "position": { "x": 138, "y": 321, "width": 44, "height": 18 },
+            "props": {
+              "text": "⏚",
+              "style": { "color": "#475569", "fontSize": "16px", "textAlign": "center" }
             }
           },
           {
@@ -220,9 +448,18 @@
             }
           },
           {
+            "meta": { "name": "GND_G2" },
+            "type": "ia.display.label",
+            "position": { "x": 318, "y": 321, "width": 44, "height": 18 },
+            "props": {
+              "text": "⏚",
+              "style": { "color": "#475569", "fontSize": "16px", "textAlign": "center" }
+            }
+          },
+          {
             "meta": { "name": "TX_UpperCoil" },
             "type": "ia.display.label",
-            "position": { "x": 542, "y": 275, "width": 36, "height": 36 },
+            "position": { "x": 542, "y": 270, "width": 36, "height": 36 },
             "props": {
               "text": "",
               "style": {
@@ -235,7 +472,7 @@
           {
             "meta": { "name": "TX_LowerCoil" },
             "type": "ia.display.label",
-            "position": { "x": 542, "y": 299, "width": 36, "height": 36 },
+            "position": { "x": 542, "y": 294, "width": 36, "height": 36 },
             "props": {
               "text": "",
               "style": {
@@ -246,76 +483,124 @@
             }
           },
           {
+            "meta": { "name": "GND_TX" },
+            "type": "ia.display.label",
+            "position": { "x": 580, "y": 330, "width": 36, "height": 18 },
+            "props": {
+              "text": "⏚",
+              "style": { "color": "#475569", "fontSize": "16px", "textAlign": "center" }
+            }
+          },
+          {
+            "meta": { "name": "GND_MainBus" },
+            "type": "ia.display.label",
+            "position": { "x": 686, "y": 118, "width": 24, "height": 20 },
+            "props": {
+              "text": "⏚",
+              "style": { "color": "#475569", "fontSize": "16px", "textAlign": "center" }
+            }
+          },
+          {
+            "meta": { "name": "CB_Load1" },
+            "type": "ia.display.label",
+            "position": { "x": 448, "y": 367, "width": 24, "height": 24 },
+            "props": {
+              "text": "52",
+              "style": {
+                "backgroundColor": "#060B18",
+                "border": "2px solid #EAB308",
+                "borderRadius": "3px",
+                "fontSize": "9px",
+                "fontWeight": "700",
+                "color": "#EAB308",
+                "textAlign": "center",
+                "lineHeight": "20px"
+              }
+            }
+          },
+          {
+            "meta": { "name": "CB_Load2" },
+            "type": "ia.display.label",
+            "position": { "x": 588, "y": 367, "width": 24, "height": 24 },
+            "props": {
+              "text": "52",
+              "style": {
+                "backgroundColor": "#060B18",
+                "border": "2px solid #EAB308",
+                "borderRadius": "3px",
+                "fontSize": "9px",
+                "fontWeight": "700",
+                "color": "#EAB308",
+                "textAlign": "center",
+                "lineHeight": "20px"
+              }
+            }
+          },
+          {
             "meta": { "name": "LoadEnd1" },
             "type": "ia.display.label",
-            "position": { "x": 434, "y": 445, "width": 52, "height": 5 },
-            "props": {
-              "text": "",
-              "style": { "backgroundColor": "#EF4444" }
-            }
+            "position": { "x": 434, "y": 465, "width": 52, "height": 5 },
+            "props": { "text": "", "style": { "backgroundColor": "#EF4444" } }
           },
           {
             "meta": { "name": "LoadEnd2" },
             "type": "ia.display.label",
-            "position": { "x": 574, "y": 445, "width": 52, "height": 5 },
+            "position": { "x": 574, "y": 465, "width": 52, "height": 5 },
+            "props": { "text": "", "style": { "backgroundColor": "#EF4444" } }
+          },
+          {
+            "meta": { "name": "Label_Utility1" },
+            "type": "ia.display.label",
+            "position": { "x": 96, "y": 4, "width": 130, "height": 16 },
             "props": {
-              "text": "",
-              "style": { "backgroundColor": "#EF4444" }
+              "text": "UTILITY #1",
+              "style": {
+                "fontSize": "10px",
+                "fontWeight": "700",
+                "color": "#94A3B8",
+                "letterSpacing": "1px"
+              }
+            }
+          },
+          {
+            "meta": { "name": "Label_Utility2" },
+            "type": "ia.display.label",
+            "position": { "x": 496, "y": 4, "width": 130, "height": 16 },
+            "props": {
+              "text": "UTILITY #2",
+              "style": {
+                "fontSize": "10px",
+                "fontWeight": "700",
+                "color": "#94A3B8",
+                "letterSpacing": "1px"
+              }
             }
           },
           {
             "meta": { "name": "Label_MainBus" },
             "type": "ia.display.label",
-            "position": { "x": 42, "y": 102, "width": 140, "height": 16 },
+            "position": { "x": 42, "y": 104, "width": 240, "height": 14 },
             "props": {
-              "text": "13.8 kV BUS",
+              "text": "13.8 kV BUS  |  1200A  |  25kA",
               "style": {
-                "fontSize": "10px",
+                "fontSize": "9px",
                 "fontWeight": "700",
                 "color": "#4F8EF7",
-                "letterSpacing": "1px"
+                "letterSpacing": "0.5px"
               }
             }
           },
           {
             "meta": { "name": "Label_LoadBus" },
             "type": "ia.display.label",
-            "position": { "x": 382, "y": 342, "width": 140, "height": 16 },
+            "position": { "x": 382, "y": 344, "width": 180, "height": 14 },
             "props": {
-              "text": "4.16 kV BUS",
+              "text": "4.16 kV BUS  |  600A",
               "style": {
-                "fontSize": "10px",
+                "fontSize": "9px",
                 "fontWeight": "700",
                 "color": "#4F8EF7",
-                "letterSpacing": "1px"
-              }
-            }
-          },
-          {
-            "meta": { "name": "Label_GridLeft" },
-            "type": "ia.display.label",
-            "position": { "x": 96, "y": 4, "width": 130, "height": 14 },
-            "props": {
-              "text": "GRID CONNECTION",
-              "style": {
-                "fontSize": "9px",
-                "fontWeight": "600",
-                "color": "#475569",
-                "letterSpacing": "1px"
-              }
-            }
-          },
-          {
-            "meta": { "name": "Label_GridRight" },
-            "type": "ia.display.label",
-            "position": { "x": 496, "y": 4, "width": 130, "height": 14 },
-            "props": {
-              "text": "GRID CONNECTION",
-              "style": {
-                "fontSize": "9px",
-                "fontWeight": "600",
-                "color": "#475569",
-                "letterSpacing": "1px"
+                "letterSpacing": "0.5px"
               }
             }
           },
@@ -350,14 +635,27 @@
           {
             "meta": { "name": "Label_TXName" },
             "type": "ia.display.label",
-            "position": { "x": 538, "y": 338, "width": 44, "height": 18 },
+            "position": { "x": 584, "y": 268, "width": 40, "height": 16 },
             "props": {
               "text": "TX-1",
               "style": {
                 "fontSize": "11px",
                 "fontWeight": "700",
-                "color": "#E2E8F0",
-                "textAlign": "center"
+                "color": "#E2E8F0"
+              }
+            }
+          },
+          {
+            "meta": { "name": "Label_TXRating" },
+            "type": "ia.display.label",
+            "position": { "x": 584, "y": 286, "width": 168, "height": 48 },
+            "props": {
+              "text": "10 MVA\n13.8kV – 4.16kV\n5.75%Z",
+              "style": {
+                "fontSize": "9px",
+                "color": "#475569",
+                "whiteSpace": "pre-line",
+                "lineHeight": "1.6"
               }
             }
           },
