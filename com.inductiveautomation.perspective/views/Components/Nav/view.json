@@ -1,16 +1,9 @@
 {
   "custom": {},
   "params": {},
-  "props": {
-    "defaultSize": {
-      "width": 1440,
-      "height": 56
-    }
-  },
+  "props": { "defaultSize": { "width": 1440, "height": 56 } },
   "root": {
-    "meta": {
-      "name": "root"
-    },
+    "meta": { "name": "root" },
     "type": "ia.container.flex",
     "props": {
       "direction": "row",
@@ -25,29 +18,22 @@
     },
     "children": [
       {
-        "meta": {
-          "name": "Logo"
-        },
+        "meta": { "name": "Logo" },
         "type": "ia.display.label",
-        "position": {
-          "basis": "220px",
-          "shrink": 0
-        },
+        "position": { "basis": "220px", "shrink": 0 },
         "events": {
           "dom": {
             "onClick": {
-              "config": {
-                "script": "\tsystem.perspective.navigate('/')"
-              },
+              "config": { "script": "\tsystem.perspective.navigate('/')" },
               "scope": "G",
               "type": "script"
             }
           }
         },
         "props": {
-          "text": "POWERGRID HMI",
+          "text": "CLEARWATER ENERGY",
           "style": {
-            "fontSize": "15px",
+            "fontSize": "14px",
             "fontWeight": "700",
             "color": "#4F8EF7",
             "letterSpacing": "2px",
@@ -56,32 +42,21 @@
         }
       },
       {
-        "meta": {
-          "name": "NavTabs"
-        },
+        "meta": { "name": "NavTabs" },
         "type": "ia.container.flex",
-        "position": {
-          "grow": 1
-        },
+        "position": { "grow": 1 },
         "props": {
           "direction": "row",
-          "style": {
-            "alignItems": "center",
-            "gap": "4px"
-          }
+          "style": { "alignItems": "center", "gap": "4px" }
         },
         "children": [
           {
-            "meta": {
-              "name": "TabHome"
-            },
+            "meta": { "name": "TabHome" },
             "type": "ia.display.label",
             "events": {
               "dom": {
                 "onClick": {
-                  "config": {
-                    "script": "\tsystem.perspective.navigate('/')"
-                  },
+                  "config": { "script": "\tsystem.perspective.navigate('/')" },
                   "scope": "G",
                   "type": "script"
                 }
@@ -91,25 +66,19 @@
               "props.style.backgroundColor": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/','#1B2B4B','transparent')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/','#1B2B4B','transparent')" }
                 }
               },
               "props.style.color": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/','#E2E8F0','#94A3B8')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/','#E2E8F0','#94A3B8')" }
                 }
               },
               "props.style.fontWeight": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/','600','500')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/','600','500')" }
                 }
               }
             },
@@ -127,16 +96,12 @@
             }
           },
           {
-            "meta": {
-              "name": "TabEvents"
-            },
+            "meta": { "name": "TabEvents" },
             "type": "ia.display.label",
             "events": {
               "dom": {
                 "onClick": {
-                  "config": {
-                    "script": "\tsystem.perspective.navigate('/events')"
-                  },
+                  "config": { "script": "\tsystem.perspective.navigate('/events')" },
                   "scope": "G",
                   "type": "script"
                 }
@@ -146,25 +111,19 @@
               "props.style.backgroundColor": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/events','#1B2B4B','transparent')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/events','#1B2B4B','transparent')" }
                 }
               },
               "props.style.color": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/events','#E2E8F0','#94A3B8')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/events','#E2E8F0','#94A3B8')" }
                 }
               },
               "props.style.fontWeight": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/events','600','500')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/events','600','500')" }
                 }
               }
             },
@@ -173,25 +132,21 @@
               "style": {
                 "padding": "6px 16px",
                 "fontSize": "13px",
-                "fontWeight": "600",
-                "color": "#E2E8F0",
-                "backgroundColor": "#1B2B4B",
+                "fontWeight": "500",
+                "color": "#94A3B8",
+                "backgroundColor": "transparent",
                 "borderRadius": "6px",
                 "cursor": "pointer"
               }
             }
           },
           {
-            "meta": {
-              "name": "TabMonitor"
-            },
+            "meta": { "name": "TabMonitor" },
             "type": "ia.display.label",
             "events": {
               "dom": {
                 "onClick": {
-                  "config": {
-                    "script": "\tsystem.perspective.navigate('/monitor')"
-                  },
+                  "config": { "script": "\tsystem.perspective.navigate('/monitor')" },
                   "scope": "G",
                   "type": "script"
                 }
@@ -201,25 +156,19 @@
               "props.style.backgroundColor": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/monitor','#1B2B4B','transparent')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/monitor','#1B2B4B','transparent')" }
                 }
               },
               "props.style.color": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/monitor','#E2E8F0','#94A3B8')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/monitor','#E2E8F0','#94A3B8')" }
                 }
               },
               "props.style.fontWeight": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/monitor','600','500')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/monitor','600','500')" }
                 }
               }
             },
@@ -228,25 +177,21 @@
               "style": {
                 "padding": "6px 16px",
                 "fontSize": "13px",
-                "fontWeight": "600",
-                "color": "#E2E8F0",
-                "backgroundColor": "#1B2B4B",
+                "fontWeight": "500",
+                "color": "#94A3B8",
+                "backgroundColor": "transparent",
                 "borderRadius": "6px",
                 "cursor": "pointer"
               }
             }
           },
           {
-            "meta": {
-              "name": "TabReports"
-            },
+            "meta": { "name": "TabReports" },
             "type": "ia.display.label",
             "events": {
               "dom": {
                 "onClick": {
-                  "config": {
-                    "script": "\tsystem.perspective.navigate('/reports')"
-                  },
+                  "config": { "script": "\tsystem.perspective.navigate('/reports')" },
                   "scope": "G",
                   "type": "script"
                 }
@@ -256,25 +201,19 @@
               "props.style.backgroundColor": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/reports','#1B2B4B','transparent')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/reports','#1B2B4B','transparent')" }
                 }
               },
               "props.style.color": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/reports','#E2E8F0','#94A3B8')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/reports','#E2E8F0','#94A3B8')" }
                 }
               },
               "props.style.fontWeight": {
                 "binding": {
                   "type": "expr",
-                  "config": {
-                    "expression": "if({page.props.path}='/reports','600','500')"
-                  }
+                  "config": { "expression": "if({page.props.path}='/reports','600','500')" }
                 }
               }
             },
@@ -283,9 +222,54 @@
               "style": {
                 "padding": "6px 16px",
                 "fontSize": "13px",
-                "fontWeight": "600",
-                "color": "#E2E8F0",
-                "backgroundColor": "#1B2B4B",
+                "fontWeight": "500",
+                "color": "#94A3B8",
+                "backgroundColor": "transparent",
+                "borderRadius": "6px",
+                "cursor": "pointer"
+              }
+            }
+          },
+          {
+            "meta": { "name": "TabSLD" },
+            "type": "ia.display.label",
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": { "script": "\tsystem.perspective.navigate('/sld')" },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "propConfig": {
+              "props.style.backgroundColor": {
+                "binding": {
+                  "type": "expr",
+                  "config": { "expression": "if({page.props.path}='/sld','#1B2B4B','transparent')" }
+                }
+              },
+              "props.style.color": {
+                "binding": {
+                  "type": "expr",
+                  "config": { "expression": "if({page.props.path}='/sld','#E2E8F0','#94A3B8')" }
+                }
+              },
+              "props.style.fontWeight": {
+                "binding": {
+                  "type": "expr",
+                  "config": { "expression": "if({page.props.path}='/sld','600','500')" }
+                }
+              }
+            },
+            "props": {
+              "text": "SLD",
+              "style": {
+                "padding": "6px 16px",
+                "fontSize": "13px",
+                "fontWeight": "500",
+                "color": "#94A3B8",
+                "backgroundColor": "transparent",
                 "borderRadius": "6px",
                 "cursor": "pointer"
               }
@@ -294,14 +278,9 @@
         ]
       },
       {
-        "meta": {
-          "name": "StatusArea"
-        },
+        "meta": { "name": "StatusArea" },
         "type": "ia.container.flex",
-        "position": {
-          "basis": "200px",
-          "shrink": 0
-        },
+        "position": { "basis": "200px", "shrink": 0 },
         "props": {
           "direction": "row",
           "style": {
@@ -312,25 +291,25 @@
         },
         "children": [
           {
-            "meta": {
-              "name": "StatusDot"
-            },
+            "meta": { "name": "StatusDot" },
             "type": "ia.display.label",
             "props": {
               "text": "",
               "style": {
-                "width": "8px",
-                "height": "8px",
+                "width": "10px",
+                "height": "10px",
+                "minWidth": "10px",
+                "minHeight": "10px",
                 "borderRadius": "50%",
                 "backgroundColor": "#22C55E",
-                "flexShrink": "0"
+                "flexShrink": "0",
+                "display": "block",
+                "boxShadow": "0 0 8px 3px rgba(34,197,94,0.45)"
               }
             }
           },
           {
-            "meta": {
-              "name": "StatusText"
-            },
+            "meta": { "name": "StatusText" },
             "type": "ia.display.label",
             "props": {
               "text": "System Normal",

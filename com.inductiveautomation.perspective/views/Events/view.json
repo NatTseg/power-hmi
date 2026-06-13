@@ -1,283 +1,99 @@
 {
   "custom": {},
   "params": {},
-  "props": {
-    "defaultSize": {
-      "width": 1440
-    }
-  },
+  "props": { "defaultSize": { "width": 1440 } },
   "root": {
-    "meta": {
-      "name": "root"
-    },
+    "meta": { "name": "root" },
     "type": "ia.container.flex",
     "props": {
       "direction": "column",
-      "style": {
-        "backgroundColor": "#060B18",
-        "minHeight": "100vh"
-      }
+      "style": { "backgroundColor": "#060B18", "minHeight": "100vh" }
     },
     "children": [
       {
-        "meta": {
-          "name": "NavBar"
-        },
+        "meta": { "name": "NavBar" },
         "type": "ia.display.view",
-        "position": {
-          "basis": "56px",
-          "shrink": 0
-        },
-        "props": {
-          "path": "Components/Nav"
-        }
+        "position": { "basis": "56px", "shrink": 0 },
+        "props": { "path": "Components/Nav" }
       },
       {
-        "meta": {
-          "name": "PageContent"
-        },
+        "meta": { "name": "PageContent" },
         "type": "ia.container.flex",
-        "position": {
-          "grow": 1
-        },
+        "position": { "grow": 1 },
         "props": {
           "direction": "column",
-          "style": {
-            "padding": "28px 32px",
-            "gap": "20px",
-            "overflowY": "auto"
-          }
+          "style": { "padding": "28px 32px", "gap": "20px", "overflowY": "auto" }
         },
         "children": [
           {
-            "meta": {
-              "name": "PageTitle"
-            },
+            "meta": { "name": "PageTitle" },
             "type": "ia.display.label",
             "props": {
               "text": "EVENTS",
-              "style": {
-                "fontSize": "22px",
-                "fontWeight": "700",
-                "color": "#E2E8F0",
-                "letterSpacing": "0.5px"
-              }
+              "style": { "fontSize": "22px", "fontWeight": "700", "color": "#E2E8F0", "letterSpacing": "0.5px" }
             }
           },
           {
-            "meta": {
-              "name": "SummaryBar"
-            },
+            "meta": { "name": "SummaryBar" },
             "type": "ia.container.flex",
-            "props": {
-              "direction": "row",
-              "style": {
-                "gap": "12px"
-              }
-            },
+            "props": { "direction": "row", "style": { "gap": "12px" } },
             "children": [
               {
-                "meta": {
-                  "name": "SumCard_Critical"
-                },
+                "meta": { "name": "SumCard_Critical" },
                 "type": "ia.container.flex",
-                "position": {
-                  "grow": 1
-                },
+                "position": { "grow": 1 },
                 "props": {
                   "direction": "column",
-                  "style": {
-                    "backgroundColor": "#3B0A0A",
-                    "border": "1px solid #EF4444",
-                    "borderRadius": "10px",
-                    "padding": "16px",
-                    "gap": "4px",
-                    "alignItems": "center"
-                  }
+                  "style": { "backgroundColor": "#3B0A0A", "border": "1px solid #EF4444", "borderRadius": "10px", "padding": "16px", "gap": "4px", "alignItems": "center" }
                 },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "Count"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "3",
-                      "style": {
-                        "fontSize": "28px",
-                        "fontWeight": "700",
-                        "color": "#EF4444"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Label"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "Critical",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "Count" }, "type": "ia.display.label", "props": { "text": "3", "style": { "fontSize": "28px", "fontWeight": "700", "color": "#EF4444" } } },
+                  { "meta": { "name": "Label" }, "type": "ia.display.label", "props": { "text": "Critical", "style": { "fontSize": "11px", "color": "#94A3B8" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "SumCard_Warning"
-                },
+                "meta": { "name": "SumCard_Warning" },
                 "type": "ia.container.flex",
-                "position": {
-                  "grow": 1
-                },
+                "position": { "grow": 1 },
                 "props": {
                   "direction": "column",
-                  "style": {
-                    "backgroundColor": "#2D1F00",
-                    "border": "1px solid #EAB308",
-                    "borderRadius": "10px",
-                    "padding": "16px",
-                    "gap": "4px",
-                    "alignItems": "center"
-                  }
+                  "style": { "backgroundColor": "#2D1F00", "border": "1px solid #EAB308", "borderRadius": "10px", "padding": "16px", "gap": "4px", "alignItems": "center" }
                 },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "Count"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "4",
-                      "style": {
-                        "fontSize": "28px",
-                        "fontWeight": "700",
-                        "color": "#EAB308"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Label"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "Warning",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "Count" }, "type": "ia.display.label", "props": { "text": "4", "style": { "fontSize": "28px", "fontWeight": "700", "color": "#EAB308" } } },
+                  { "meta": { "name": "Label" }, "type": "ia.display.label", "props": { "text": "Warning", "style": { "fontSize": "11px", "color": "#94A3B8" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "SumCard_Caution"
-                },
+                "meta": { "name": "SumCard_Caution" },
                 "type": "ia.container.flex",
-                "position": {
-                  "grow": 1
-                },
+                "position": { "grow": 1 },
                 "props": {
                   "direction": "column",
-                  "style": {
-                    "backgroundColor": "#1A1A00",
-                    "border": "1px solid #F59E0B",
-                    "borderRadius": "10px",
-                    "padding": "16px",
-                    "gap": "4px",
-                    "alignItems": "center"
-                  }
+                  "style": { "backgroundColor": "#1A1A00", "border": "1px solid #F59E0B", "borderRadius": "10px", "padding": "16px", "gap": "4px", "alignItems": "center" }
                 },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "Count"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "4",
-                      "style": {
-                        "fontSize": "28px",
-                        "fontWeight": "700",
-                        "color": "#F59E0B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Label"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "Caution",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "Count" }, "type": "ia.display.label", "props": { "text": "4", "style": { "fontSize": "28px", "fontWeight": "700", "color": "#F59E0B" } } },
+                  { "meta": { "name": "Label" }, "type": "ia.display.label", "props": { "text": "Caution", "style": { "fontSize": "11px", "color": "#94A3B8" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "SumCard_Info"
-                },
+                "meta": { "name": "SumCard_Info" },
                 "type": "ia.container.flex",
-                "position": {
-                  "grow": 1
-                },
+                "position": { "grow": 1 },
                 "props": {
                   "direction": "column",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "10px",
-                    "padding": "16px",
-                    "gap": "4px",
-                    "alignItems": "center"
-                  }
+                  "style": { "backgroundColor": "#0A1428", "border": "1px solid #1B2B4B", "borderRadius": "10px", "padding": "16px", "gap": "4px", "alignItems": "center" }
                 },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "Count"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "4",
-                      "style": {
-                        "fontSize": "28px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Label"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "Info",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "Count" }, "type": "ia.display.label", "props": { "text": "4", "style": { "fontSize": "28px", "fontWeight": "700", "color": "#4F8EF7" } } },
+                  { "meta": { "name": "Label" }, "type": "ia.display.label", "props": { "text": "Info", "style": { "fontSize": "11px", "color": "#94A3B8" } } }
                 ]
               }
             ]
           },
           {
-            "meta": {
-              "name": "EventsList"
-            },
+            "meta": { "name": "EventsList" },
             "type": "ia.container.flex",
             "props": {
               "direction": "column",
@@ -285,1830 +101,205 @@
                 "backgroundColor": "#0D1526",
                 "border": "1px solid #1B2B4B",
                 "borderRadius": "12px",
-                "gap": "8px",
-                "padding": "12px",
-                "overflowY": "auto"
+                "gap": "0px",
+                "padding": "0px",
+                "overflow": "hidden"
               }
             },
             "children": [
               {
-                "meta": {
-                  "name": "ColHeader"
-                },
+                "meta": { "name": "ColHeader" },
                 "type": "ia.container.flex",
                 "props": {
                   "direction": "row",
-                  "style": {
-                    "padding": "6px 16px",
-                    "gap": "16px",
-                    "borderBottom": "1px solid #1B2B4B"
-                  }
+                  "style": { "padding": "10px 16px", "gap": "16px", "borderBottom": "1px solid #1B2B4B", "overflow": "hidden" }
                 },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "H_PRIORITY"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PRIORITY",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#475569",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "H_TIMESTAMP"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "TIMESTAMP",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#475569",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "H_EQUIPMENT"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "EQUIPMENT",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#475569",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "H_MESSAGE"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "MESSAGE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#475569",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "H_STATUS"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "STATUS",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#475569",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "H_PRIORITY" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "PRIORITY", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } },
+                  { "meta": { "name": "H_TIMESTAMP" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "TIMESTAMP", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } },
+                  { "meta": { "name": "H_EQUIPMENT" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "EQUIPMENT", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } },
+                  { "meta": { "name": "H_MESSAGE" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "MESSAGE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } },
+                  { "meta": { "name": "H_STATUS" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "STATUS", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_0"
-                },
+                "meta": { "name": "EventRow_0" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#3B0A0A",
-                    "border": "1px solid #EF4444",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#3B0A0A", "borderBottom": "1px solid #2A0707", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CRITICAL",
-                      "style": {
-                        "backgroundColor": "#EF4444",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  14:32:07",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "G3",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#EF4444"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Under-frequency relay trip \u2014 59.2 Hz detected",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACTIVE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EF4444",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CRITICAL", "style": { "backgroundColor": "#EF4444", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 14:32", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "INV-A3", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EF4444" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Solar inverter fault — DC overcurrent protection trip", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_1"
-                },
+                "meta": { "name": "EventRow_1" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#3B0A0A",
-                    "border": "1px solid #EF4444",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#3B0A0A", "borderBottom": "1px solid #2A0707", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CRITICAL",
-                      "style": {
-                        "backgroundColor": "#EF4444",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  14:29:41",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CB-G3",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#EF4444"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Circuit breaker open on fault condition",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACTIVE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EF4444",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CRITICAL", "style": { "backgroundColor": "#EF4444", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 14:29", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "WTG-N4", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EF4444" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Wind turbine emergency stop — vibration limit exceeded", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_2"
-                },
+                "meta": { "name": "EventRow_2" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#3B0A0A",
-                    "border": "1px solid #EF4444",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#3B0A0A", "borderBottom": "1px solid #2A0707", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CRITICAL",
-                      "style": {
-                        "backgroundColor": "#EF4444",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  11:07:18",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "13.8kV Bus",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#EF4444"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Bus voltage deviation +6% above nominal",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACTIVE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EF4444",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CRITICAL", "style": { "backgroundColor": "#EF4444", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 11:07", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "GRID-TIE", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EF4444" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Grid voltage sag 0.93 pu — protection relay response triggered", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_3"
-                },
+                "meta": { "name": "EventRow_3" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#2D1F00",
-                    "border": "1px solid #EAB308",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#2D1F00", "borderBottom": "1px solid #201600", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "WARNING",
-                      "style": {
-                        "backgroundColor": "#EAB308",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  13:55:00",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "G3",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#EAB308"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Stator winding temperature approaching limit (148 \u00b0C)",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACK",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EAB308",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "WARNING", "style": { "backgroundColor": "#EAB308", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 13:55", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "Array B", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EAB308" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Output 15% below irradiance forecast — possible soiling or shading", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_4"
-                },
+                "meta": { "name": "EventRow_4" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#2D1F00",
-                    "border": "1px solid #EAB308",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#2D1F00", "borderBottom": "1px solid #201600", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "WARNING",
-                      "style": {
-                        "backgroundColor": "#EAB308",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  13:20:15",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "TX-1",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#EAB308"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Transformer oil temp high \u2014 92 \u00b0C (limit 95 \u00b0C)",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACK",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EAB308",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "WARNING", "style": { "backgroundColor": "#EAB308", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 13:20", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "INV-C2", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EAB308" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Inverter running at 97% thermal capacity — approaching derating threshold", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_5"
-                },
+                "meta": { "name": "EventRow_5" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#2D1F00",
-                    "border": "1px solid #EAB308",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#2D1F00", "borderBottom": "1px solid #201600", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "WARNING",
-                      "style": {
-                        "backgroundColor": "#EAB308",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  12:48:33",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "G5",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#EAB308"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Reactive power output at 94% of rated MVAR",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACTIVE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EF4444",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "WARNING", "style": { "backgroundColor": "#EAB308", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 12:48", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "WTG-S2", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EAB308" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Gearbox temperature high — 88°C (limit 95°C)", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_6"
-                },
+                "meta": { "name": "EventRow_6" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#2D1F00",
-                    "border": "1px solid #EAB308",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#2D1F00", "borderBottom": "1px solid #201600", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "WARNING",
-                      "style": {
-                        "backgroundColor": "#EAB308",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  10:15:44",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CB-UTIL1",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#EAB308"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Utility #1 feeder breaker contact wear indicator",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACK",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EAB308",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "WARNING", "style": { "backgroundColor": "#EAB308", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 10:15", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "TX-GRID", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EAB308" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Grid interconnect transformer oil temperature high — 91°C (limit 95°C)", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_7"
-                },
+                "meta": { "name": "EventRow_7" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#1A1A00",
-                    "border": "1px solid #F59E0B",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#1A1A00", "borderBottom": "1px solid #141400", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CAUTION",
-                      "style": {
-                        "backgroundColor": "#F59E0B",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  14:01:22",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "G2",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#F59E0B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Power factor dropped to 0.81 \u2014 below 0.85 setpoint",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACTIVE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EF4444",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CAUTION", "style": { "backgroundColor": "#F59E0B", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 14:01", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "A-Row12", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#F59E0B" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "String-level monitoring communication loss — Array A, Row 12", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_8"
-                },
+                "meta": { "name": "EventRow_8" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#1A1A00",
-                    "border": "1px solid #F59E0B",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#1A1A00", "borderBottom": "1px solid #141400", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CAUTION",
-                      "style": {
-                        "backgroundColor": "#F59E0B",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  13:44:05",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "4.16kV Bus",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#F59E0B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Load bus voltage 4.10 kV \u2014 below lower limit",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACTIVE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EF4444",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CAUTION", "style": { "backgroundColor": "#F59E0B", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 13:44", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "WTG-S3", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#F59E0B" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Blade pitch actuator response slow — yaw control degraded", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_9"
-                },
+                "meta": { "name": "EventRow_9" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#1A1A00",
-                    "border": "1px solid #F59E0B",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#1A1A00", "borderBottom": "1px solid #141400", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CAUTION",
-                      "style": {
-                        "backgroundColor": "#F59E0B",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  12:30:00",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "G4",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#F59E0B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Governor response slow \u2014 frequency deviation persisted 8 s",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACK",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EAB308",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CAUTION", "style": { "backgroundColor": "#F59E0B", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 12:30", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "Array C", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#F59E0B" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Soiling loss estimated >8% — panel cleaning scheduled for tomorrow", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_10"
-                },
+                "meta": { "name": "EventRow_10" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#1A1A00",
-                    "border": "1px solid #F59E0B",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#1A1A00", "borderBottom": "1px solid #141400", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CAUTION",
-                      "style": {
-                        "backgroundColor": "#F59E0B",
-                        "color": "#060B18",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  09:12:11",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "TX-1",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#F59E0B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Dissolved gas analysis: H\u2082 trace detected (12 ppm)",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "ACK",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#EAB308",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CAUTION", "style": { "backgroundColor": "#F59E0B", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 09:12", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "SCADA", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#F59E0B" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Wind forecast model deviation >20% — recalibrating against observed data", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_11"
-                },
+                "meta": { "name": "EventRow_11" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#0A1428", "borderBottom": "1px solid #0E1A35", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "INFO",
-                      "style": {
-                        "backgroundColor": "#2D4A7A",
-                        "color": "#94A3B8",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  08:00:00",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "System",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#64748B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Scheduled maintenance window completed successfully",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CLEARED",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#22C55E",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "INFO", "style": { "backgroundColor": "#2D4A7A", "color": "#94A3B8", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 08:00", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "WTG-W1", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#64748B" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Scheduled maintenance complete — turbine returned to service", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "CLEARED", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#22C55E", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_12"
-                },
+                "meta": { "name": "EventRow_12" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#0A1428", "borderBottom": "1px solid #0E1A35", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "INFO",
-                      "style": {
-                        "backgroundColor": "#2D4A7A",
-                        "color": "#94A3B8",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  07:55:30",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "G6",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#64748B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Generator offline for scheduled maintenance",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CLEARED",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#22C55E",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "INFO", "style": { "backgroundColor": "#2D4A7A", "color": "#94A3B8", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 07:55", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "System", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#64748B" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Daily generation report generated and dispatched to operations team", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "CLEARED", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#22C55E", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_13"
-                },
+                "meta": { "name": "EventRow_13" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#0A1428", "borderBottom": "1px solid #0E1A35", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "INFO",
-                      "style": {
-                        "backgroundColor": "#2D4A7A",
-                        "color": "#94A3B8",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13  06:00:00",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "System",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#64748B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Daily system health check passed \u2014 all limits normal",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CLEARED",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#22C55E",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "INFO", "style": { "backgroundColor": "#2D4A7A", "color": "#94A3B8", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 06:00", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "GRID", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#64748B" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Grid interconnect sync check passed — all protection limits normal", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "CLEARED", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#22C55E", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               },
               {
-                "meta": {
-                  "name": "EventRow_14"
-                },
+                "meta": { "name": "EventRow_14" },
                 "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "12px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
+                "props": { "direction": "row", "style": { "backgroundColor": "#0A1428", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
                 "children": [
-                  {
-                    "meta": {
-                      "name": "PriBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "INFO",
-                      "style": {
-                        "backgroundColor": "#2D4A7A",
-                        "color": "#94A3B8",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "borderRadius": "4px",
-                        "padding": "3px 6px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Time"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "160px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-12  22:10:45",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#475569",
-                        "fontFamily": "monospace"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Equip"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "G1",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#64748B"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Msg"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Automatic voltage regulator switched to backup mode",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Status"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "70px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "CLEARED",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#22C55E",
-                        "textAlign": "right",
-                        "letterSpacing": "0.5px"
-                      }
-                    }
-                  }
+                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "INFO", "style": { "backgroundColor": "#2D4A7A", "color": "#94A3B8", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
+                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 12 · 22:10", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
+                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "INV-B3", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#64748B" } } },
+                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Firmware update v4.2.1 applied successfully — inverter restarted", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
+                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "CLEARED", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#22C55E", "textAlign": "right", "letterSpacing": "0.5px" } } }
                 ]
               }
             ]

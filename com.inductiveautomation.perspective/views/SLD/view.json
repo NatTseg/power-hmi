@@ -1,0 +1,145 @@
+{
+  "custom": {},
+  "params": {},
+  "props": { "defaultSize": { "width": 1440 } },
+  "root": {
+    "meta": { "name": "root" },
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column",
+      "style": { "backgroundColor": "#060B18", "minHeight": "100vh" }
+    },
+    "children": [
+      {
+        "meta": { "name": "NavBar" },
+        "type": "ia.display.view",
+        "position": { "basis": "56px", "shrink": 0 },
+        "props": { "path": "Components/Nav" }
+      },
+      {
+        "meta": { "name": "PageContent" },
+        "type": "ia.container.flex",
+        "position": { "grow": 1 },
+        "props": {
+          "direction": "column",
+          "style": {
+            "padding": "28px 32px",
+            "gap": "16px",
+            "overflowY": "auto",
+            "alignItems": "center"
+          }
+        },
+        "children": [
+          {
+            "meta": { "name": "PageHeader" },
+            "type": "ia.container.flex",
+            "props": {
+              "direction": "row",
+              "style": {
+                "alignItems": "center",
+                "justifyContent": "space-between",
+                "width": "100%",
+                "maxWidth": "860px"
+              }
+            },
+            "children": [
+              {
+                "meta": { "name": "PageTitle" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "SINGLE LINE DIAGRAM",
+                  "style": {
+                    "fontSize": "22px",
+                    "fontWeight": "700",
+                    "color": "#E2E8F0",
+                    "letterSpacing": "0.5px"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "SubTitle" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "GRID INTERCONNECT  ·  13.8 kV / 4.16 kV",
+                  "style": { "fontSize": "12px", "color": "#475569", "letterSpacing": "0.5px" }
+                }
+              }
+            ]
+          },
+          {
+            "meta": { "name": "LegendRow" },
+            "type": "ia.container.flex",
+            "props": {
+              "direction": "row",
+              "style": {
+                "gap": "20px",
+                "alignItems": "center",
+                "padding": "8px 16px",
+                "backgroundColor": "#0D1526",
+                "border": "1px solid #1B2B4B",
+                "borderRadius": "8px",
+                "width": "100%",
+                "maxWidth": "860px"
+              }
+            },
+            "children": [
+              {
+                "meta": { "name": "L_CB" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "52  Circuit Breaker",
+                  "style": { "fontSize": "11px", "color": "#94A3B8", "fontFamily": "monospace" }
+                }
+              },
+              {
+                "meta": { "name": "L_CT" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "○  Current Transformer",
+                  "style": { "fontSize": "11px", "color": "#94A3B8" }
+                }
+              },
+              {
+                "meta": { "name": "L_PR" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "PR  Protective Relay",
+                  "style": { "fontSize": "11px", "color": "#A78BFA" }
+                }
+              },
+              {
+                "meta": { "name": "L_PM" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "PM  Power Meter",
+                  "style": { "fontSize": "11px", "color": "#06B6D4" }
+                }
+              },
+              {
+                "meta": { "name": "L_Bus" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "━━  Bus Bar",
+                  "style": { "fontSize": "11px", "color": "#4F8EF7" }
+                }
+              },
+              {
+                "meta": { "name": "L_Flow" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "▲▼  Power Flow",
+                  "style": { "fontSize": "11px", "color": "#A78BFA" }
+                }
+              }
+            ]
+          },
+          {
+            "meta": { "name": "SLDView" },
+            "type": "ia.display.view",
+            "props": { "path": "Components/SLD" }
+          }
+        ]
+      }
+    ]
+  }
+}
