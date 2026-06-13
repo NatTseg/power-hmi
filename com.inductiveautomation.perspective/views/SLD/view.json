@@ -61,7 +61,7 @@
                 "type": "ia.display.label",
                 "props": {
                   "text": "GRID INTERCONNECT  ·  13.8 kV / 4.16 kV",
-                  "style": { "fontSize": "12px", "color": "#475569", "letterSpacing": "0.5px" }
+                  "style": { "fontSize": "12px", "color": "#94A3B8", "letterSpacing": "0.5px" }
                 }
               }
             ]

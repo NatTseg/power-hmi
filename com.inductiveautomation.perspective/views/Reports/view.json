@@ -102,7 +102,7 @@
                       "style": {
                         "fontSize": "10px",
                         "fontWeight": "700",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "letterSpacing": "1.5px"
                       }
                     }
@@ -154,10 +154,11 @@
                     "props": {
                       "text": "FILTER BY TYPE",
                       "style": {
-                        "fontSize": "10px",
+                        "fontSize": "11px",
                         "fontWeight": "700",
-                        "color": "#475569",
-                        "letterSpacing": "1.5px"
+                        "color": "#94A3B8",
+                        "letterSpacing": "1.5px",
+                        "marginBottom": "4px"
                       }
                     }
                   },
@@ -505,7 +506,7 @@
                       "style": {
                         "fontSize": "10px",
                         "fontWeight": "700",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "letterSpacing": "1px"
                       }
                     }
@@ -523,7 +524,7 @@
                       "style": {
                         "fontSize": "10px",
                         "fontWeight": "700",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "letterSpacing": "1px"
                       }
                     }
@@ -542,7 +543,7 @@
                       "style": {
                         "fontSize": "10px",
                         "fontWeight": "700",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "letterSpacing": "1px"
                       }
                     }
@@ -561,7 +562,7 @@
                       "style": {
                         "fontSize": "10px",
                         "fontWeight": "700",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "letterSpacing": "1px"
                       }
                     }
@@ -580,7 +581,7 @@
                       "style": {
                         "fontSize": "10px",
                         "fontWeight": "700",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "letterSpacing": "1px"
                       }
                     }
@@ -599,7 +600,7 @@
                       "style": {
                         "fontSize": "10px",
                         "fontWeight": "700",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "letterSpacing": "1px"
                       }
                     }
@@ -676,7 +677,7 @@
                       "text": "2026-06-13",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -694,7 +695,7 @@
                       "text": "1.2 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -814,7 +815,7 @@
                       "text": "2026-06-12",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -832,7 +833,7 @@
                       "text": "3.4 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -952,7 +953,7 @@
                       "text": "2026-06-13",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -970,7 +971,7 @@
                       "text": "892 KB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1090,7 +1091,7 @@
                       "text": "2026-06-01",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1108,7 +1109,7 @@
                       "text": "2.1 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1228,7 +1229,7 @@
                       "text": "2026-06-10",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1246,7 +1247,7 @@
                       "text": "540 KB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1366,7 +1367,7 @@
                       "text": "2026-05-28",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1384,7 +1385,7 @@
                       "text": "6.7 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1504,7 +1505,7 @@
                       "text": "2026-06-30",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1522,7 +1523,7 @@
                       "text": "4.0 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1642,7 +1643,7 @@
                       "text": "2026-06-08",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1660,7 +1661,7 @@
                       "text": "1.8 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1780,7 +1781,7 @@
                       "text": "2026-04-15",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1798,7 +1799,7 @@
                       "text": "9.2 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1918,7 +1919,7 @@
                       "text": "2026-03-20",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -1936,7 +1937,7 @@
                       "text": "14.3 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -2056,7 +2057,7 @@
                       "text": "2026-05-15",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -2074,7 +2075,7 @@
                       "text": "2.7 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -2194,7 +2195,7 @@
                       "text": "2026-01-10",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }
@@ -2212,7 +2213,7 @@
                       "text": "22.1 MB",
                       "style": {
                         "fontSize": "11px",
-                        "color": "#475569",
+                        "color": "#94A3B8",
                         "textAlign": "right"
                       }
                     }

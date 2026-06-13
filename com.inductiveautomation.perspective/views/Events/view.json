@@ -115,11 +115,11 @@
                   "style": { "padding": "10px 16px", "gap": "16px", "borderBottom": "1px solid #1B2B4B", "overflow": "hidden" }
                 },
                 "children": [
-                  { "meta": { "name": "H_PRIORITY" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "PRIORITY", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } },
-                  { "meta": { "name": "H_TIMESTAMP" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "TIMESTAMP", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } },
-                  { "meta": { "name": "H_EQUIPMENT" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "EQUIPMENT", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } },
-                  { "meta": { "name": "H_MESSAGE" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "MESSAGE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } },
-                  { "meta": { "name": "H_STATUS" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "STATUS", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#475569", "letterSpacing": "1px" } } }
+                  { "meta": { "name": "H_PRIORITY" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "PRIORITY", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } },
+                  { "meta": { "name": "H_TIMESTAMP" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "TIMESTAMP", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } },
+                  { "meta": { "name": "H_EQUIPMENT" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "EQUIPMENT", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } },
+                  { "meta": { "name": "H_MESSAGE" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "MESSAGE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } },
+                  { "meta": { "name": "H_STATUS" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "STATUS", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } }
                 ]
               },
               {
