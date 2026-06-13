@@ -1,0 +1,507 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": { "width": 1440 }
+  },
+  "root": {
+    "meta": { "name": "root" },
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column",
+      "style": {
+        "backgroundColor": "#060B18",
+        "minHeight": "100vh"
+      }
+    },
+    "children": [
+      {
+        "meta": { "name": "NavBar" },
+        "type": "ia.display.view",
+        "position": { "basis": "56px", "shrink": 0 },
+        "props": { "path": "Components/Nav" }
+      },
+      {
+        "meta": { "name": "Content" },
+        "type": "ia.container.flex",
+        "position": { "grow": 1 },
+        "props": {
+          "direction": "row",
+          "style": { "minHeight": "0" }
+        },
+        "children": [
+          {
+            "meta": { "name": "GenColumn" },
+            "type": "ia.container.flex",
+            "position": { "basis": "268px", "shrink": 0 },
+            "props": {
+              "direction": "column",
+              "style": {
+                "borderRight": "1px solid #1B2B4B",
+                "padding": "16px 12px",
+                "gap": "8px",
+                "overflowY": "auto"
+              }
+            },
+            "children": [
+              {
+                "meta": { "name": "GenSectionTitle" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "GENERATORS",
+                  "style": {
+                    "fontSize": "10px",
+                    "fontWeight": "700",
+                    "color": "#475569",
+                    "letterSpacing": "1.5px",
+                    "marginBottom": "4px"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "G1Card" },
+                "type": "ia.display.view",
+                "props": {
+                  "path": "Components/Generator Card",
+                  "params": {
+                    "genName": "G1",
+                    "frequency": 60.1,
+                    "voltage": 13.8,
+                    "activePower": 5.2,
+                    "reactivePower": 3.4,
+                    "apparentPower": 6.2,
+                    "statusText": "Online",
+                    "statusColor": "#22C55E"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "G2Card" },
+                "type": "ia.display.view",
+                "props": {
+                  "path": "Components/Generator Card",
+                  "params": {
+                    "genName": "G2",
+                    "frequency": 60.0,
+                    "voltage": 13.8,
+                    "activePower": 4.8,
+                    "reactivePower": 2.9,
+                    "apparentPower": 5.6,
+                    "statusText": "Online",
+                    "statusColor": "#22C55E"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "G3Card" },
+                "type": "ia.display.view",
+                "props": {
+                  "path": "Components/Generator Card",
+                  "params": {
+                    "genName": "G3",
+                    "frequency": 59.9,
+                    "voltage": 13.7,
+                    "activePower": 3.1,
+                    "reactivePower": 1.8,
+                    "apparentPower": 3.6,
+                    "statusText": "Warning",
+                    "statusColor": "#EAB308"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "G4Card" },
+                "type": "ia.display.view",
+                "props": {
+                  "path": "Components/Generator Card",
+                  "params": {
+                    "genName": "G4",
+                    "frequency": 60.0,
+                    "voltage": 13.8,
+                    "activePower": 5.5,
+                    "reactivePower": 3.2,
+                    "apparentPower": 6.4,
+                    "statusText": "Online",
+                    "statusColor": "#22C55E"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "G5Card" },
+                "type": "ia.display.view",
+                "props": {
+                  "path": "Components/Generator Card",
+                  "params": {
+                    "genName": "G5",
+                    "frequency": 60.1,
+                    "voltage": 13.9,
+                    "activePower": 4.1,
+                    "reactivePower": 2.4,
+                    "apparentPower": 4.8,
+                    "statusText": "Online",
+                    "statusColor": "#22C55E"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "G6Card" },
+                "type": "ia.display.view",
+                "props": {
+                  "path": "Components/Generator Card",
+                  "params": {
+                    "genName": "G6",
+                    "frequency": 0.0,
+                    "voltage": 0.0,
+                    "activePower": 0.0,
+                    "reactivePower": 0.0,
+                    "apparentPower": 0.0,
+                    "statusText": "Offline",
+                    "statusColor": "#EF4444"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "meta": { "name": "SLDArea" },
+            "type": "ia.display.view",
+            "position": { "grow": 1, "basis": "0px" },
+            "props": { "path": "Components/SLD" }
+          },
+          {
+            "meta": { "name": "StatsPanel" },
+            "type": "ia.container.flex",
+            "position": { "basis": "240px", "shrink": 0 },
+            "props": {
+              "direction": "column",
+              "style": {
+                "borderLeft": "1px solid #1B2B4B",
+                "padding": "20px 16px",
+                "gap": "20px"
+              }
+            },
+            "children": [
+              {
+                "meta": { "name": "StatsTitle" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "SYSTEM SUMMARY",
+                  "style": {
+                    "fontSize": "10px",
+                    "fontWeight": "700",
+                    "color": "#475569",
+                    "letterSpacing": "1.5px"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "TotalMWCard" },
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#0D1526",
+                    "border": "1px solid #1B2B4B",
+                    "borderRadius": "10px",
+                    "padding": "14px",
+                    "gap": "4px"
+                  }
+                },
+                "children": [
+                  {
+                    "meta": { "name": "TotalMWLabel" },
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Total Active Power",
+                      "style": { "fontSize": "11px", "color": "#475569" }
+                    }
+                  },
+                  {
+                    "meta": { "name": "TotalMWValue" },
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "22.7 MW",
+                      "style": {
+                        "fontSize": "26px",
+                        "fontWeight": "700",
+                        "color": "#4F8EF7"
+                      }
+                    }
+                  },
+                  {
+                    "meta": { "name": "TotalMWCapacity" },
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "of 30.0 MW capacity",
+                      "style": { "fontSize": "11px", "color": "#475569" }
+                    }
+                  }
+                ]
+              },
+              {
+                "meta": { "name": "TotalMVARCard" },
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#0D1526",
+                    "border": "1px solid #1B2B4B",
+                    "borderRadius": "10px",
+                    "padding": "14px",
+                    "gap": "4px"
+                  }
+                },
+                "children": [
+                  {
+                    "meta": { "name": "TotalMVARLabel" },
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Total Reactive Power",
+                      "style": { "fontSize": "11px", "color": "#475569" }
+                    }
+                  },
+                  {
+                    "meta": { "name": "TotalMVARValue" },
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "13.7 MVAR",
+                      "style": {
+                        "fontSize": "26px",
+                        "fontWeight": "700",
+                        "color": "#06B6D4"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "meta": { "name": "GenOnlineCard" },
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "row",
+                  "style": {
+                    "gap": "8px"
+                  }
+                },
+                "children": [
+                  {
+                    "meta": { "name": "OnlineBlock" },
+                    "type": "ia.container.flex",
+                    "position": { "grow": 1 },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#0D1526",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "10px",
+                        "padding": "12px",
+                        "gap": "4px",
+                        "alignItems": "center"
+                      }
+                    },
+                    "children": [
+                      {
+                        "meta": { "name": "OnlineCount" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "4",
+                          "style": {
+                            "fontSize": "28px",
+                            "fontWeight": "700",
+                            "color": "#22C55E"
+                          }
+                        }
+                      },
+                      {
+                        "meta": { "name": "OnlineLabel" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "Online",
+                          "style": { "fontSize": "11px", "color": "#475569" }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "meta": { "name": "WarnBlock" },
+                    "type": "ia.container.flex",
+                    "position": { "grow": 1 },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#0D1526",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "10px",
+                        "padding": "12px",
+                        "gap": "4px",
+                        "alignItems": "center"
+                      }
+                    },
+                    "children": [
+                      {
+                        "meta": { "name": "WarnCount" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "1",
+                          "style": {
+                            "fontSize": "28px",
+                            "fontWeight": "700",
+                            "color": "#EAB308"
+                          }
+                        }
+                      },
+                      {
+                        "meta": { "name": "WarnLabel" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "Warning",
+                          "style": { "fontSize": "11px", "color": "#475569" }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "meta": { "name": "OfflineBlock" },
+                    "type": "ia.container.flex",
+                    "position": { "grow": 1 },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#0D1526",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "10px",
+                        "padding": "12px",
+                        "gap": "4px",
+                        "alignItems": "center"
+                      }
+                    },
+                    "children": [
+                      {
+                        "meta": { "name": "OfflineCount" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "1",
+                          "style": {
+                            "fontSize": "28px",
+                            "fontWeight": "700",
+                            "color": "#EF4444"
+                          }
+                        }
+                      },
+                      {
+                        "meta": { "name": "OfflineLabel" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "Offline",
+                          "style": { "fontSize": "11px", "color": "#475569" }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "meta": { "name": "BusVoltageTitle" },
+                "type": "ia.display.label",
+                "props": {
+                  "text": "BUS VOLTAGES",
+                  "style": {
+                    "fontSize": "10px",
+                    "fontWeight": "700",
+                    "color": "#475569",
+                    "letterSpacing": "1.5px",
+                    "marginTop": "4px"
+                  }
+                }
+              },
+              {
+                "meta": { "name": "BusVoltageCard" },
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#0D1526",
+                    "border": "1px solid #1B2B4B",
+                    "borderRadius": "10px",
+                    "padding": "14px",
+                    "gap": "10px"
+                  }
+                },
+                "children": [
+                  {
+                    "meta": { "name": "Bus1Row" },
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": { "justifyContent": "space-between", "alignItems": "center" }
+                    },
+                    "children": [
+                      {
+                        "meta": { "name": "Bus1Label" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "13.8 kV Bus",
+                          "style": { "fontSize": "12px", "color": "#94A3B8" }
+                        }
+                      },
+                      {
+                        "meta": { "name": "Bus1Value" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "13.81 kV",
+                          "style": {
+                            "fontSize": "13px",
+                            "fontWeight": "700",
+                            "color": "#22C55E"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "meta": { "name": "BusDivider" },
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "",
+                      "style": { "height": "1px", "backgroundColor": "#1B2B4B" }
+                    }
+                  },
+                  {
+                    "meta": { "name": "Bus2Row" },
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": { "justifyContent": "space-between", "alignItems": "center" }
+                    },
+                    "children": [
+                      {
+                        "meta": { "name": "Bus2Label" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "4.16 kV Bus",
+                          "style": { "fontSize": "12px", "color": "#94A3B8" }
+                        }
+                      },
+                      {
+                        "meta": { "name": "Bus2Value" },
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "4.18 kV",
+                          "style": {
+                            "fontSize": "13px",
+                            "fontWeight": "700",
+                            "color": "#22C55E"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

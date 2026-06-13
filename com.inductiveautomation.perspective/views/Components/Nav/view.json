@@ -1,0 +1,154 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": { "width": 1440, "height": 56 }
+  },
+  "root": {
+    "meta": { "name": "root" },
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "row",
+      "style": {
+        "backgroundColor": "#0D1526",
+        "borderBottom": "1px solid #1B2B4B",
+        "alignItems": "center",
+        "padding": "0 24px",
+        "height": "56px",
+        "gap": "0px"
+      }
+    },
+    "children": [
+      {
+        "meta": { "name": "Logo" },
+        "type": "ia.display.label",
+        "position": { "basis": "220px", "shrink": 0 },
+        "props": {
+          "text": "POWERGRID HMI",
+          "style": {
+            "fontSize": "15px",
+            "fontWeight": "700",
+            "color": "#4F8EF7",
+            "letterSpacing": "2px"
+          }
+        }
+      },
+      {
+        "meta": { "name": "NavTabs" },
+        "type": "ia.container.flex",
+        "position": { "grow": 1 },
+        "props": {
+          "direction": "row",
+          "style": {
+            "alignItems": "center",
+            "gap": "4px"
+          }
+        },
+        "children": [
+          {
+            "meta": { "name": "TabHome" },
+            "type": "ia.display.label",
+            "props": {
+              "text": "Home",
+              "style": {
+                "padding": "6px 16px",
+                "fontSize": "13px",
+                "fontWeight": "600",
+                "color": "#E2E8F0",
+                "backgroundColor": "#1B2B4B",
+                "borderRadius": "6px",
+                "cursor": "pointer"
+              }
+            }
+          },
+          {
+            "meta": { "name": "TabEvents" },
+            "type": "ia.display.label",
+            "props": {
+              "text": "Events",
+              "style": {
+                "padding": "6px 16px",
+                "fontSize": "13px",
+                "fontWeight": "500",
+                "color": "#94A3B8",
+                "borderRadius": "6px",
+                "cursor": "pointer"
+              }
+            }
+          },
+          {
+            "meta": { "name": "TabTrending" },
+            "type": "ia.display.label",
+            "props": {
+              "text": "Trending",
+              "style": {
+                "padding": "6px 16px",
+                "fontSize": "13px",
+                "fontWeight": "500",
+                "color": "#94A3B8",
+                "borderRadius": "6px",
+                "cursor": "pointer"
+              }
+            }
+          },
+          {
+            "meta": { "name": "TabReports" },
+            "type": "ia.display.label",
+            "props": {
+              "text": "Reports",
+              "style": {
+                "padding": "6px 16px",
+                "fontSize": "13px",
+                "fontWeight": "500",
+                "color": "#94A3B8",
+                "borderRadius": "6px",
+                "cursor": "pointer"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "meta": { "name": "StatusArea" },
+        "type": "ia.container.flex",
+        "position": { "basis": "200px", "shrink": 0 },
+        "props": {
+          "direction": "row",
+          "style": {
+            "alignItems": "center",
+            "justifyContent": "flex-end",
+            "gap": "8px"
+          }
+        },
+        "children": [
+          {
+            "meta": { "name": "StatusDot" },
+            "type": "ia.display.label",
+            "props": {
+              "text": "",
+              "style": {
+                "width": "8px",
+                "height": "8px",
+                "borderRadius": "50%",
+                "backgroundColor": "#22C55E",
+                "flexShrink": "0"
+              }
+            }
+          },
+          {
+            "meta": { "name": "StatusText" },
+            "type": "ia.display.label",
+            "props": {
+              "text": "System Normal",
+              "style": {
+                "fontSize": "12px",
+                "color": "#22C55E",
+                "fontWeight": "500"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

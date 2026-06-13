@@ -1,0 +1,14 @@
+{
+  "pages": {
+    "/": {
+      "title": "Power System HMI",
+      "viewPath": "Dashboard"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom",
+    "bottom": [],
+    "left": [],
+    "right": []
+  }
+}
