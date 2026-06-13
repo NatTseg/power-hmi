@@ -3,6 +3,18 @@
     "/": {
       "title": "Power System HMI",
       "viewPath": "Dashboard"
+    },
+    "/events": {
+      "title": "Events",
+      "viewPath": "Events"
+    },
+    "/monitor": {
+      "title": "Monitor",
+      "viewPath": "Monitor"
+    },
+    "/reports": {
+      "title": "Reports",
+      "viewPath": "Reports"
     }
   },
   "sharedDocks": {

@@ -11,18 +11,36 @@
     "statusColor": "#22C55E"
   },
   "propConfig": {
-    "params.activePower": { "paramDirection": "input" },
-    "params.apparentPower": { "paramDirection": "input" },
-    "params.frequency": { "paramDirection": "input" },
-    "params.genName": { "paramDirection": "input" },
-    "params.reactivePower": { "paramDirection": "input" },
-    "params.statusColor": { "paramDirection": "input" },
-    "params.statusText": { "paramDirection": "input" },
-    "params.voltage": { "paramDirection": "input" }
+    "params.activePower": {
+      "paramDirection": "input"
+    },
+    "params.apparentPower": {
+      "paramDirection": "input"
+    },
+    "params.frequency": {
+      "paramDirection": "input"
+    },
+    "params.genName": {
+      "paramDirection": "input"
+    },
+    "params.reactivePower": {
+      "paramDirection": "input"
+    },
+    "params.statusColor": {
+      "paramDirection": "input"
+    },
+    "params.statusText": {
+      "paramDirection": "input"
+    },
+    "params.voltage": {
+      "paramDirection": "input"
+    }
   },
   "props": {},
   "root": {
-    "meta": { "name": "root" },
+    "meta": {
+      "name": "root"
+    },
     "type": "ia.container.flex",
     "props": {
       "direction": "column",
@@ -30,13 +48,15 @@
         "backgroundColor": "#0D1526",
         "border": "1px solid #1B2B4B",
         "borderRadius": "10px",
-        "padding": "12px",
+        "padding": "16px",
         "gap": "0px"
       }
     },
     "children": [
       {
-        "meta": { "name": "Header" },
+        "meta": {
+          "name": "Header"
+        },
         "type": "ia.container.flex",
         "props": {
           "direction": "row",
@@ -47,14 +67,20 @@
         },
         "children": [
           {
-            "meta": { "name": "GenName" },
+            "meta": {
+              "name": "GenName"
+            },
             "type": "ia.display.label",
-            "position": { "grow": 1 },
+            "position": {
+              "grow": 1
+            },
             "propConfig": {
               "props.text": {
                 "binding": {
                   "type": "property",
-                  "config": { "path": "view.params.genName" }
+                  "config": {
+                    "path": "view.params.genName"
+                  }
                 }
               }
             },
@@ -68,7 +94,9 @@
             }
           },
           {
-            "meta": { "name": "StatusPill" },
+            "meta": {
+              "name": "StatusPill"
+            },
             "type": "ia.container.flex",
             "props": {
               "direction": "row",
@@ -82,13 +110,17 @@
             },
             "children": [
               {
-                "meta": { "name": "Dot" },
+                "meta": {
+                  "name": "Dot"
+                },
                 "type": "ia.display.label",
                 "propConfig": {
                   "props.style.backgroundColor": {
                     "binding": {
                       "type": "property",
-                      "config": { "path": "view.params.statusColor" }
+                      "config": {
+                        "path": "view.params.statusColor"
+                      }
                     }
                   }
                 },
@@ -104,19 +136,25 @@
                 }
               },
               {
-                "meta": { "name": "StatusLabel" },
+                "meta": {
+                  "name": "StatusLabel"
+                },
                 "type": "ia.display.label",
                 "propConfig": {
                   "props.text": {
                     "binding": {
                       "type": "property",
-                      "config": { "path": "view.params.statusText" }
+                      "config": {
+                        "path": "view.params.statusText"
+                      }
                     }
                   },
                   "props.style.color": {
                     "binding": {
                       "type": "property",
-                      "config": { "path": "view.params.statusColor" }
+                      "config": {
+                        "path": "view.params.statusColor"
+                      }
                     }
                   }
                 },
@@ -134,196 +172,317 @@
         ]
       },
       {
-        "meta": { "name": "Divider" },
+        "meta": {
+          "name": "Divider"
+        },
         "type": "ia.display.label",
         "props": {
           "text": "",
           "style": {
             "height": "1px",
             "backgroundColor": "#1B2B4B",
-            "marginBottom": "10px"
+            "marginBottom": "12px"
           }
         }
       },
       {
-        "meta": { "name": "Metrics" },
+        "meta": {
+          "name": "Metrics"
+        },
         "type": "ia.container.flex",
         "props": {
           "direction": "column",
-          "style": { "gap": "6px" }
+          "style": {
+            "gap": "10px"
+          }
         },
         "children": [
           {
-            "meta": { "name": "FreqRow" },
+            "meta": {
+              "name": "FreqRow"
+            },
             "type": "ia.container.flex",
             "props": {
               "direction": "row",
-              "style": { "justifyContent": "space-between", "alignItems": "center" }
+              "style": {
+                "justifyContent": "space-between",
+                "alignItems": "center"
+              }
             },
             "children": [
               {
-                "meta": { "name": "FreqLabel" },
+                "meta": {
+                  "name": "FreqLabel"
+                },
                 "type": "ia.display.label",
                 "props": {
                   "text": "Frequency",
-                  "style": { "fontSize": "11px", "color": "#475569" }
+                  "style": {
+                    "fontSize": "11px",
+                    "color": "#475569"
+                  }
                 }
               },
               {
-                "meta": { "name": "FreqValue" },
+                "meta": {
+                  "name": "FreqValue"
+                },
                 "type": "ia.display.label",
                 "propConfig": {
                   "props.text": {
                     "binding": {
                       "type": "property",
-                      "config": { "path": "view.params.frequency" },
-                      "transforms": [{ "type": "script", "code": "\treturn '{:.1f} Hz'.format(value)" }]
+                      "config": {
+                        "path": "view.params.frequency"
+                      },
+                      "transforms": [
+                        {
+                          "type": "script",
+                          "code": "\treturn '{:.1f} Hz'.format(value)"
+                        }
+                      ]
                     }
                   }
                 },
                 "props": {
                   "text": "60.0 Hz",
-                  "style": { "fontSize": "12px", "fontWeight": "600", "color": "#94A3B8" }
+                  "style": {
+                    "fontSize": "12px",
+                    "fontWeight": "600",
+                    "color": "#94A3B8"
+                  }
                 }
               }
             ]
           },
           {
-            "meta": { "name": "VoltageRow" },
+            "meta": {
+              "name": "VoltageRow"
+            },
             "type": "ia.container.flex",
             "props": {
               "direction": "row",
-              "style": { "justifyContent": "space-between", "alignItems": "center" }
+              "style": {
+                "justifyContent": "space-between",
+                "alignItems": "center"
+              }
             },
             "children": [
               {
-                "meta": { "name": "VoltLabel" },
+                "meta": {
+                  "name": "VoltLabel"
+                },
                 "type": "ia.display.label",
                 "props": {
                   "text": "Voltage",
-                  "style": { "fontSize": "11px", "color": "#475569" }
+                  "style": {
+                    "fontSize": "11px",
+                    "color": "#475569"
+                  }
                 }
               },
               {
-                "meta": { "name": "VoltValue" },
+                "meta": {
+                  "name": "VoltValue"
+                },
                 "type": "ia.display.label",
                 "propConfig": {
                   "props.text": {
                     "binding": {
                       "type": "property",
-                      "config": { "path": "view.params.voltage" },
-                      "transforms": [{ "type": "script", "code": "\treturn '{:.1f} kV'.format(value)" }]
+                      "config": {
+                        "path": "view.params.voltage"
+                      },
+                      "transforms": [
+                        {
+                          "type": "script",
+                          "code": "\treturn '{:.1f} kV'.format(value)"
+                        }
+                      ]
                     }
                   }
                 },
                 "props": {
                   "text": "13.8 kV",
-                  "style": { "fontSize": "12px", "fontWeight": "600", "color": "#94A3B8" }
+                  "style": {
+                    "fontSize": "12px",
+                    "fontWeight": "600",
+                    "color": "#94A3B8"
+                  }
                 }
               }
             ]
           },
           {
-            "meta": { "name": "ActivePRow" },
+            "meta": {
+              "name": "ActivePRow"
+            },
             "type": "ia.container.flex",
             "props": {
               "direction": "row",
-              "style": { "justifyContent": "space-between", "alignItems": "center" }
+              "style": {
+                "justifyContent": "space-between",
+                "alignItems": "center"
+              }
             },
             "children": [
               {
-                "meta": { "name": "ActivePLabel" },
+                "meta": {
+                  "name": "ActivePLabel"
+                },
                 "type": "ia.display.label",
                 "props": {
                   "text": "Active Power",
-                  "style": { "fontSize": "11px", "color": "#475569" }
+                  "style": {
+                    "fontSize": "11px",
+                    "color": "#475569"
+                  }
                 }
               },
               {
-                "meta": { "name": "ActivePValue" },
+                "meta": {
+                  "name": "ActivePValue"
+                },
                 "type": "ia.display.label",
                 "propConfig": {
                   "props.text": {
                     "binding": {
                       "type": "property",
-                      "config": { "path": "view.params.activePower" },
-                      "transforms": [{ "type": "script", "code": "\treturn '{:.1f} MW'.format(value)" }]
+                      "config": {
+                        "path": "view.params.activePower"
+                      },
+                      "transforms": [
+                        {
+                          "type": "script",
+                          "code": "\treturn '{:.1f} MW'.format(value)"
+                        }
+                      ]
                     }
                   }
                 },
                 "props": {
                   "text": "0.0 MW",
-                  "style": { "fontSize": "12px", "fontWeight": "600", "color": "#4F8EF7" }
+                  "style": {
+                    "fontSize": "12px",
+                    "fontWeight": "600",
+                    "color": "#4F8EF7"
+                  }
                 }
               }
             ]
           },
           {
-            "meta": { "name": "ReactivePRow" },
+            "meta": {
+              "name": "ReactivePRow"
+            },
             "type": "ia.container.flex",
             "props": {
               "direction": "row",
-              "style": { "justifyContent": "space-between", "alignItems": "center" }
+              "style": {
+                "justifyContent": "space-between",
+                "alignItems": "center"
+              }
             },
             "children": [
               {
-                "meta": { "name": "ReactivePLabel" },
+                "meta": {
+                  "name": "ReactivePLabel"
+                },
                 "type": "ia.display.label",
                 "props": {
                   "text": "Reactive Power",
-                  "style": { "fontSize": "11px", "color": "#475569" }
+                  "style": {
+                    "fontSize": "11px",
+                    "color": "#475569"
+                  }
                 }
               },
               {
-                "meta": { "name": "ReactivePValue" },
+                "meta": {
+                  "name": "ReactivePValue"
+                },
                 "type": "ia.display.label",
                 "propConfig": {
                   "props.text": {
                     "binding": {
                       "type": "property",
-                      "config": { "path": "view.params.reactivePower" },
-                      "transforms": [{ "type": "script", "code": "\treturn '{:.1f} MVAR'.format(value)" }]
+                      "config": {
+                        "path": "view.params.reactivePower"
+                      },
+                      "transforms": [
+                        {
+                          "type": "script",
+                          "code": "\treturn '{:.1f} MVAR'.format(value)"
+                        }
+                      ]
                     }
                   }
                 },
                 "props": {
                   "text": "0.0 MVAR",
-                  "style": { "fontSize": "12px", "fontWeight": "600", "color": "#94A3B8" }
+                  "style": {
+                    "fontSize": "12px",
+                    "fontWeight": "600",
+                    "color": "#94A3B8"
+                  }
                 }
               }
             ]
           },
           {
-            "meta": { "name": "ApparentPRow" },
+            "meta": {
+              "name": "ApparentPRow"
+            },
             "type": "ia.container.flex",
             "props": {
               "direction": "row",
-              "style": { "justifyContent": "space-between", "alignItems": "center" }
+              "style": {
+                "justifyContent": "space-between",
+                "alignItems": "center"
+              }
             },
             "children": [
               {
-                "meta": { "name": "ApparentPLabel" },
+                "meta": {
+                  "name": "ApparentPLabel"
+                },
                 "type": "ia.display.label",
                 "props": {
                   "text": "Apparent Power",
-                  "style": { "fontSize": "11px", "color": "#475569" }
+                  "style": {
+                    "fontSize": "11px",
+                    "color": "#475569"
+                  }
                 }
               },
               {
-                "meta": { "name": "ApparentPValue" },
+                "meta": {
+                  "name": "ApparentPValue"
+                },
                 "type": "ia.display.label",
                 "propConfig": {
                   "props.text": {
                     "binding": {
                       "type": "property",
-                      "config": { "path": "view.params.apparentPower" },
-                      "transforms": [{ "type": "script", "code": "\treturn '{:.1f} MVA'.format(value)" }]
+                      "config": {
+                        "path": "view.params.apparentPower"
+                      },
+                      "transforms": [
+                        {
+                          "type": "script",
+                          "code": "\treturn '{:.1f} MVA'.format(value)"
+                        }
+                      ]
                     }
                   }
                 },
                 "props": {
                   "text": "0.0 MVA",
-                  "style": { "fontSize": "12px", "fontWeight": "600", "color": "#94A3B8" }
+                  "style": {
+                    "fontSize": "12px",
+                    "fontWeight": "600",
+                    "color": "#94A3B8"
+                  }
                 }
               }
             ]

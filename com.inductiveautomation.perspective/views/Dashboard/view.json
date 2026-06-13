@@ -2,10 +2,14 @@
   "custom": {},
   "params": {},
   "props": {
-    "defaultSize": { "width": 1440 }
+    "defaultSize": {
+      "width": 1440
+    }
   },
   "root": {
-    "meta": { "name": "root" },
+    "meta": {
+      "name": "root"
+    },
     "type": "ia.container.flex",
     "props": {
       "direction": "column",
@@ -16,36 +20,56 @@
     },
     "children": [
       {
-        "meta": { "name": "NavBar" },
+        "meta": {
+          "name": "NavBar"
+        },
         "type": "ia.display.view",
-        "position": { "basis": "56px", "shrink": 0 },
-        "props": { "path": "Components/Nav" }
+        "position": {
+          "basis": "56px",
+          "shrink": 0
+        },
+        "props": {
+          "path": "Components/Nav"
+        }
       },
       {
-        "meta": { "name": "Content" },
+        "meta": {
+          "name": "Content"
+        },
         "type": "ia.container.flex",
-        "position": { "grow": 1 },
+        "position": {
+          "grow": 1
+        },
         "props": {
           "direction": "row",
-          "style": { "minHeight": "0" }
+          "style": {
+            "minHeight": "0"
+          }
         },
         "children": [
           {
-            "meta": { "name": "GenColumn" },
+            "meta": {
+              "name": "GenColumn"
+            },
             "type": "ia.container.flex",
-            "position": { "basis": "268px", "shrink": 0 },
+            "position": {
+              "basis": "268px",
+              "shrink": 0
+            },
             "props": {
               "direction": "column",
               "style": {
                 "borderRight": "1px solid #1B2B4B",
-                "padding": "16px 12px",
-                "gap": "8px",
+                "padding": "16px 14px",
+                "gap": "12px",
                 "overflowY": "auto"
               }
             },
             "children": [
               {
-                "meta": { "name": "GenSectionTitle" },
+                "meta": {
+                  "name": "GenSectionTitle"
+                },
                 "type": "ia.display.label",
                 "props": {
                   "text": "GENERATORS",
@@ -59,7 +83,9 @@
                 }
               },
               {
-                "meta": { "name": "G1Card" },
+                "meta": {
+                  "name": "G1Card"
+                },
                 "type": "ia.display.view",
                 "props": {
                   "path": "Components/Generator Card",
@@ -76,7 +102,9 @@
                 }
               },
               {
-                "meta": { "name": "G2Card" },
+                "meta": {
+                  "name": "G2Card"
+                },
                 "type": "ia.display.view",
                 "props": {
                   "path": "Components/Generator Card",
@@ -93,7 +121,9 @@
                 }
               },
               {
-                "meta": { "name": "G3Card" },
+                "meta": {
+                  "name": "G3Card"
+                },
                 "type": "ia.display.view",
                 "props": {
                   "path": "Components/Generator Card",
@@ -110,7 +140,9 @@
                 }
               },
               {
-                "meta": { "name": "G4Card" },
+                "meta": {
+                  "name": "G4Card"
+                },
                 "type": "ia.display.view",
                 "props": {
                   "path": "Components/Generator Card",
@@ -127,7 +159,9 @@
                 }
               },
               {
-                "meta": { "name": "G5Card" },
+                "meta": {
+                  "name": "G5Card"
+                },
                 "type": "ia.display.view",
                 "props": {
                   "path": "Components/Generator Card",
@@ -144,7 +178,9 @@
                 }
               },
               {
-                "meta": { "name": "G6Card" },
+                "meta": {
+                  "name": "G6Card"
+                },
                 "type": "ia.display.view",
                 "props": {
                   "path": "Components/Generator Card",
@@ -163,15 +199,27 @@
             ]
           },
           {
-            "meta": { "name": "SLDArea" },
+            "meta": {
+              "name": "SLDArea"
+            },
             "type": "ia.display.view",
-            "position": { "grow": 1, "basis": "0px" },
-            "props": { "path": "Components/SLD" }
+            "position": {
+              "grow": 1,
+              "basis": "0px"
+            },
+            "props": {
+              "path": "Components/SLD"
+            }
           },
           {
-            "meta": { "name": "StatsPanel" },
+            "meta": {
+              "name": "StatsPanel"
+            },
             "type": "ia.container.flex",
-            "position": { "basis": "240px", "shrink": 0 },
+            "position": {
+              "basis": "240px",
+              "shrink": 0
+            },
             "props": {
               "direction": "column",
               "style": {
@@ -182,7 +230,9 @@
             },
             "children": [
               {
-                "meta": { "name": "StatsTitle" },
+                "meta": {
+                  "name": "StatsTitle"
+                },
                 "type": "ia.display.label",
                 "props": {
                   "text": "SYSTEM SUMMARY",
@@ -195,7 +245,9 @@
                 }
               },
               {
-                "meta": { "name": "TotalMWCard" },
+                "meta": {
+                  "name": "TotalMWCard"
+                },
                 "type": "ia.container.flex",
                 "props": {
                   "direction": "column",
@@ -209,15 +261,22 @@
                 },
                 "children": [
                   {
-                    "meta": { "name": "TotalMWLabel" },
+                    "meta": {
+                      "name": "TotalMWLabel"
+                    },
                     "type": "ia.display.label",
                     "props": {
                       "text": "Total Active Power",
-                      "style": { "fontSize": "11px", "color": "#475569" }
+                      "style": {
+                        "fontSize": "11px",
+                        "color": "#475569"
+                      }
                     }
                   },
                   {
-                    "meta": { "name": "TotalMWValue" },
+                    "meta": {
+                      "name": "TotalMWValue"
+                    },
                     "type": "ia.display.label",
                     "props": {
                       "text": "22.7 MW",
@@ -229,17 +288,24 @@
                     }
                   },
                   {
-                    "meta": { "name": "TotalMWCapacity" },
+                    "meta": {
+                      "name": "TotalMWCapacity"
+                    },
                     "type": "ia.display.label",
                     "props": {
                       "text": "of 30.0 MW capacity",
-                      "style": { "fontSize": "11px", "color": "#475569" }
+                      "style": {
+                        "fontSize": "11px",
+                        "color": "#475569"
+                      }
                     }
                   }
                 ]
               },
               {
-                "meta": { "name": "TotalMVARCard" },
+                "meta": {
+                  "name": "TotalMVARCard"
+                },
                 "type": "ia.container.flex",
                 "props": {
                   "direction": "column",
@@ -253,15 +319,22 @@
                 },
                 "children": [
                   {
-                    "meta": { "name": "TotalMVARLabel" },
+                    "meta": {
+                      "name": "TotalMVARLabel"
+                    },
                     "type": "ia.display.label",
                     "props": {
                       "text": "Total Reactive Power",
-                      "style": { "fontSize": "11px", "color": "#475569" }
+                      "style": {
+                        "fontSize": "11px",
+                        "color": "#475569"
+                      }
                     }
                   },
                   {
-                    "meta": { "name": "TotalMVARValue" },
+                    "meta": {
+                      "name": "TotalMVARValue"
+                    },
                     "type": "ia.display.label",
                     "props": {
                       "text": "13.7 MVAR",
@@ -275,7 +348,9 @@
                 ]
               },
               {
-                "meta": { "name": "GenOnlineCard" },
+                "meta": {
+                  "name": "GenOnlineCard"
+                },
                 "type": "ia.container.flex",
                 "props": {
                   "direction": "row",
@@ -285,9 +360,13 @@
                 },
                 "children": [
                   {
-                    "meta": { "name": "OnlineBlock" },
+                    "meta": {
+                      "name": "OnlineBlock"
+                    },
                     "type": "ia.container.flex",
-                    "position": { "grow": 1 },
+                    "position": {
+                      "grow": 1
+                    },
                     "props": {
                       "direction": "column",
                       "style": {
@@ -301,7 +380,9 @@
                     },
                     "children": [
                       {
-                        "meta": { "name": "OnlineCount" },
+                        "meta": {
+                          "name": "OnlineCount"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "4",
@@ -313,19 +394,28 @@
                         }
                       },
                       {
-                        "meta": { "name": "OnlineLabel" },
+                        "meta": {
+                          "name": "OnlineLabel"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "Online",
-                          "style": { "fontSize": "11px", "color": "#475569" }
+                          "style": {
+                            "fontSize": "11px",
+                            "color": "#475569"
+                          }
                         }
                       }
                     ]
                   },
                   {
-                    "meta": { "name": "WarnBlock" },
+                    "meta": {
+                      "name": "WarnBlock"
+                    },
                     "type": "ia.container.flex",
-                    "position": { "grow": 1 },
+                    "position": {
+                      "grow": 1
+                    },
                     "props": {
                       "direction": "column",
                       "style": {
@@ -339,7 +429,9 @@
                     },
                     "children": [
                       {
-                        "meta": { "name": "WarnCount" },
+                        "meta": {
+                          "name": "WarnCount"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "1",
@@ -351,19 +443,28 @@
                         }
                       },
                       {
-                        "meta": { "name": "WarnLabel" },
+                        "meta": {
+                          "name": "WarnLabel"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "Warning",
-                          "style": { "fontSize": "11px", "color": "#475569" }
+                          "style": {
+                            "fontSize": "11px",
+                            "color": "#475569"
+                          }
                         }
                       }
                     ]
                   },
                   {
-                    "meta": { "name": "OfflineBlock" },
+                    "meta": {
+                      "name": "OfflineBlock"
+                    },
                     "type": "ia.container.flex",
-                    "position": { "grow": 1 },
+                    "position": {
+                      "grow": 1
+                    },
                     "props": {
                       "direction": "column",
                       "style": {
@@ -377,7 +478,9 @@
                     },
                     "children": [
                       {
-                        "meta": { "name": "OfflineCount" },
+                        "meta": {
+                          "name": "OfflineCount"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "1",
@@ -389,11 +492,16 @@
                         }
                       },
                       {
-                        "meta": { "name": "OfflineLabel" },
+                        "meta": {
+                          "name": "OfflineLabel"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "Offline",
-                          "style": { "fontSize": "11px", "color": "#475569" }
+                          "style": {
+                            "fontSize": "11px",
+                            "color": "#475569"
+                          }
                         }
                       }
                     ]
@@ -401,7 +509,9 @@
                 ]
               },
               {
-                "meta": { "name": "BusVoltageTitle" },
+                "meta": {
+                  "name": "BusVoltageTitle"
+                },
                 "type": "ia.display.label",
                 "props": {
                   "text": "BUS VOLTAGES",
@@ -415,7 +525,9 @@
                 }
               },
               {
-                "meta": { "name": "BusVoltageCard" },
+                "meta": {
+                  "name": "BusVoltageCard"
+                },
                 "type": "ia.container.flex",
                 "props": {
                   "direction": "column",
@@ -429,23 +541,35 @@
                 },
                 "children": [
                   {
-                    "meta": { "name": "Bus1Row" },
+                    "meta": {
+                      "name": "Bus1Row"
+                    },
                     "type": "ia.container.flex",
                     "props": {
                       "direction": "row",
-                      "style": { "justifyContent": "space-between", "alignItems": "center" }
+                      "style": {
+                        "justifyContent": "space-between",
+                        "alignItems": "center"
+                      }
                     },
                     "children": [
                       {
-                        "meta": { "name": "Bus1Label" },
+                        "meta": {
+                          "name": "Bus1Label"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "13.8 kV Bus",
-                          "style": { "fontSize": "12px", "color": "#94A3B8" }
+                          "style": {
+                            "fontSize": "12px",
+                            "color": "#94A3B8"
+                          }
                         }
                       },
                       {
-                        "meta": { "name": "Bus1Value" },
+                        "meta": {
+                          "name": "Bus1Value"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "13.81 kV",
@@ -459,31 +583,48 @@
                     ]
                   },
                   {
-                    "meta": { "name": "BusDivider" },
+                    "meta": {
+                      "name": "BusDivider"
+                    },
                     "type": "ia.display.label",
                     "props": {
                       "text": "",
-                      "style": { "height": "1px", "backgroundColor": "#1B2B4B" }
+                      "style": {
+                        "height": "1px",
+                        "backgroundColor": "#1B2B4B"
+                      }
                     }
                   },
                   {
-                    "meta": { "name": "Bus2Row" },
+                    "meta": {
+                      "name": "Bus2Row"
+                    },
                     "type": "ia.container.flex",
                     "props": {
                       "direction": "row",
-                      "style": { "justifyContent": "space-between", "alignItems": "center" }
+                      "style": {
+                        "justifyContent": "space-between",
+                        "alignItems": "center"
+                      }
                     },
                     "children": [
                       {
-                        "meta": { "name": "Bus2Label" },
+                        "meta": {
+                          "name": "Bus2Label"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "4.16 kV Bus",
-                          "style": { "fontSize": "12px", "color": "#94A3B8" }
+                          "style": {
+                            "fontSize": "12px",
+                            "color": "#94A3B8"
+                          }
                         }
                       },
                       {
-                        "meta": { "name": "Bus2Value" },
+                        "meta": {
+                          "name": "Bus2Value"
+                        },
                         "type": "ia.display.label",
                         "props": {
                           "text": "4.18 kV",
