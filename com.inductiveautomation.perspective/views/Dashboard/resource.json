@@ -3,8 +3,13 @@
   "version": 1,
   "restricted": false,
   "overridable": true,
-  "files": ["view.json"],
+  "files": [
+    "view.json"
+  ],
   "attributes": {
-    "lastModification": { "actor": "admin", "timestamp": "2026-06-13T00:00:00Z" }
+    "lastModification": {
+      "actor": "admin",
+      "timestamp": "2026-06-14T00:00:00Z"
+    }
   }
 }

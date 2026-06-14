@@ -3,2269 +3,1384 @@
   "params": {},
   "props": {
     "defaultSize": {
-      "width": 1440
+      "width": 1440,
+      "height": 900
     }
   },
   "root": {
-    "meta": {
-      "name": "root"
-    },
     "type": "ia.container.flex",
+    "meta": {
+      "name": "ReportsRoot"
+    },
     "props": {
       "direction": "column",
+      "justify": "flex-start",
+      "alignItems": "stretch",
       "style": {
-        "backgroundColor": "#060B18",
-        "minHeight": "100vh"
+        "backgroundColor": "#060B18"
       }
     },
     "children": [
       {
-        "meta": {
-          "name": "NavBar"
-        },
         "type": "ia.display.view",
-        "position": {
-          "basis": "56px",
-          "shrink": 0
+        "meta": {
+          "name": "Nav"
         },
         "props": {
-          "path": "Components/Nav"
+          "path": "Components/Nav",
+          "style": {}
+        },
+        "position": {
+          "grow": 0,
+          "shrink": 0,
+          "basis": "56px"
         }
       },
       {
-        "meta": {
-          "name": "PageContent"
-        },
         "type": "ia.container.flex",
-        "position": {
-          "grow": 1
+        "meta": {
+          "name": "flex"
         },
         "props": {
           "direction": "column",
+          "justify": "flex-start",
+          "alignItems": "stretch",
           "style": {
-            "padding": "28px 32px",
-            "gap": "20px",
-            "overflowY": "auto"
+            "gap": "1.25rem",
+            "padding": "1.5rem 2rem",
+            "overflow": "auto"
           }
         },
         "children": [
           {
+            "type": "ia.container.flex",
             "meta": {
-              "name": "PageTitle"
+              "name": "flex"
             },
-            "type": "ia.display.label",
             "props": {
-              "text": "REPORTS",
-              "style": {
-                "fontSize": "22px",
-                "fontWeight": "700",
-                "color": "#E2E8F0",
-                "letterSpacing": "0.5px"
+              "direction": "row",
+              "justify": "flex-start",
+              "alignItems": "center",
+              "style": {}
+            },
+            "children": [
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "column",
+                  "justify": "flex-start",
+                  "alignItems": "stretch",
+                  "style": {
+                    "gap": "2px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "REPORTS",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "1.375rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Generated reports and downloadable logs",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
+              },
+              {
+                "type": "ia.display.label",
+                "meta": {
+                  "name": "lbl"
+                },
+                "props": {
+                  "text": "",
+                  "style": {
+                    "color": "#E2E8F0",
+                    "fontSize": "0.875rem",
+                    "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                    "textAlign": "left",
+                    "letterSpacing": "normal"
+                  }
+                },
+                "position": {
+                  "grow": 1,
+                  "shrink": 1,
+                  "basis": "0%"
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "stretch",
+                  "style": {
+                    "gap": "0.5rem"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
+                    "props": {
+                      "text": "All",
+                      "style": {
+                        "backgroundColor": "#4F8EF7",
+                        "color": "#E2E8F0",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #4F8EF7",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
+                    "props": {
+                      "text": "PDF",
+                      "style": {
+                        "backgroundColor": "#111E34",
+                        "color": "#94A3B8",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
+                    "props": {
+                      "text": "XLSX",
+                      "style": {
+                        "backgroundColor": "#111E34",
+                        "color": "#94A3B8",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
+                    "props": {
+                      "text": "CSV",
+                      "style": {
+                        "backgroundColor": "#111E34",
+                        "color": "#94A3B8",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
+                    "props": {
+                      "text": "Auto",
+                      "style": {
+                        "backgroundColor": "#111E34",
+                        "color": "#94A3B8",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               }
+            ],
+            "position": {
+              "grow": 0,
+              "shrink": 0,
+              "basis": "auto"
             }
           },
           {
-            "meta": {
-              "name": "SearchAndFilters"
-            },
             "type": "ia.container.flex",
-            "props": {
-              "direction": "row",
-              "style": {
-                "gap": "16px",
-                "alignItems": "flex-start"
-              }
-            },
-            "children": [
-              {
-                "meta": {
-                  "name": "SearchBox"
-                },
-                "type": "ia.container.flex",
-                "position": {
-                  "grow": 1
-                },
-                "props": {
-                  "direction": "column",
-                  "style": {
-                    "gap": "8px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "SearchLabel"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "SEARCH REPORTS",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1.5px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "SearchField"
-                    },
-                    "type": "ia.input.text-field",
-                    "props": {
-                      "placeholderText": "Search by name, type, or date\u2026",
-                      "style": {
-                        "backgroundColor": "#0D1526",
-                        "border": "1px solid #1B2B4B",
-                        "borderRadius": "8px",
-                        "color": "#E2E8F0",
-                        "fontSize": "13px",
-                        "padding": "10px 14px"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "meta": {
-                  "name": "FilterPanel"
-                },
-                "type": "ia.container.flex",
-                "position": {
-                  "basis": "320px",
-                  "shrink": 0
-                },
-                "props": {
-                  "direction": "column",
-                  "style": {
-                    "backgroundColor": "#0D1526",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "12px",
-                    "padding": "16px",
-                    "gap": "12px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "FilterTitle"
-                    },
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "FILTER BY TYPE",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1.5px",
-                        "marginBottom": "4px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "CB_Operations"
-                    },
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "center",
-                        "gap": "10px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "CBInput"
-                        },
-                        "type": "ia.input.checkbox",
-                        "props": {
-                          "selected": true
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "CBLabel"
-                        },
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "Operations",
-                          "style": {
-                            "fontSize": "12px",
-                            "color": "#4F8EF7"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "meta": {
-                      "name": "CB_Consumption"
-                    },
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "center",
-                        "gap": "10px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "CBInput"
-                        },
-                        "type": "ia.input.checkbox",
-                        "props": {
-                          "selected": true
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "CBLabel"
-                        },
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "Consumption",
-                          "style": {
-                            "fontSize": "12px",
-                            "color": "#06B6D4"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "meta": {
-                      "name": "CB_Incident"
-                    },
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "center",
-                        "gap": "10px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "CBInput"
-                        },
-                        "type": "ia.input.checkbox",
-                        "props": {
-                          "selected": true
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "CBLabel"
-                        },
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "Incident",
-                          "style": {
-                            "fontSize": "12px",
-                            "color": "#EF4444"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "meta": {
-                      "name": "CB_Energy"
-                    },
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "center",
-                        "gap": "10px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "CBInput"
-                        },
-                        "type": "ia.input.checkbox",
-                        "props": {
-                          "selected": true
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "CBLabel"
-                        },
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "Energy",
-                          "style": {
-                            "fontSize": "12px",
-                            "color": "#22C55E"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "meta": {
-                      "name": "CB_Maintenance"
-                    },
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "center",
-                        "gap": "10px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "CBInput"
-                        },
-                        "type": "ia.input.checkbox",
-                        "props": {
-                          "selected": true
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "CBLabel"
-                        },
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "Maintenance",
-                          "style": {
-                            "fontSize": "12px",
-                            "color": "#EAB308"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "meta": {
-                      "name": "CB_Protection"
-                    },
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "center",
-                        "gap": "10px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "CBInput"
-                        },
-                        "type": "ia.input.checkbox",
-                        "props": {
-                          "selected": true
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "CBLabel"
-                        },
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "Protection",
-                          "style": {
-                            "fontSize": "12px",
-                            "color": "#A78BFA"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "meta": {
-                      "name": "CB_Power_Quality"
-                    },
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "center",
-                        "gap": "10px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "CBInput"
-                        },
-                        "type": "ia.input.checkbox",
-                        "props": {
-                          "selected": true
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "CBLabel"
-                        },
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "Power Quality",
-                          "style": {
-                            "fontSize": "12px",
-                            "color": "#F97316"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "meta": {
-                      "name": "CB_Compliance"
-                    },
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "center",
-                        "gap": "10px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "meta": {
-                          "name": "CBInput"
-                        },
-                        "type": "ia.input.checkbox",
-                        "props": {
-                          "selected": true
-                        }
-                      },
-                      {
-                        "meta": {
-                          "name": "CBLabel"
-                        },
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "Compliance",
-                          "style": {
-                            "fontSize": "12px",
-                            "color": "#4F8EF7"
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "meta": {
-              "name": "ReportsList"
+              "name": "flex"
             },
-            "type": "ia.container.flex",
             "props": {
               "direction": "column",
+              "justify": "flex-start",
+              "alignItems": "stretch",
               "style": {
+                "gap": "0",
                 "backgroundColor": "#0D1526",
                 "border": "1px solid #1B2B4B",
-                "borderRadius": "12px",
-                "gap": "8px",
-                "padding": "12px"
+                "borderRadius": "10px",
+                "overflow": "hidden"
               }
             },
             "children": [
               {
-                "meta": {
-                  "name": "ColHeader"
-                },
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
                   "style": {
-                    "padding": "6px 16px",
-                    "gap": "16px",
+                    "gap": "1rem",
+                    "padding": "0.5rem 1rem",
+                    "backgroundColor": "#111E34"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Report Name",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.5rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1px",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Type",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.5rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1px",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.5rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1px",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.75rem 1rem",
                     "borderBottom": "1px solid #1B2B4B"
                   }
                 },
                 "children": [
                   {
+                    "type": "ia.container.flex",
                     "meta": {
-                      "name": "H_TYPE"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
+                      "name": "flex"
                     },
                     "props": {
-                      "text": "TYPE",
+                      "direction": "column",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
                       "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1px"
+                        "gap": "2px"
                       }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Daily Generation Summary",
+                          "style": {
+                            "color": "#E2E8F0",
+                            "fontSize": "0.875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Auto-generated  ·  Jun 13, 2026",
+                          "style": {
+                            "color": "#64748B",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
                     }
                   },
                   {
-                    "meta": {
-                      "name": "H_REPORT NAME"
-                    },
                     "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "REPORT NAME",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  },
-                  {
                     "meta": {
-                      "name": "H_DATE"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "DATE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "H_SIZE"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "SIZE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "H_FMT"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "FMT",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "H_"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1px"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "meta": {
-                  "name": "ReportRow_0"
-                },
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "Operations",
-                      "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Daily Operations Summary",
-                      "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "1.2 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
+                      "name": "lbl"
                     },
                     "props": {
                       "text": "PDF",
                       "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7",
-                        "textAlign": "center"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "meta": {
-                  "name": "ReportRow_1"
-                },
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "Consumption",
-                      "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "color": "#06B6D4",
-                        "border": "1px solid #06B6D4",
-                        "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Weekly Power Consumption Report",
-                      "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-12",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "3.4 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "XLSX",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
                         "color": "#22C55E",
-                        "textAlign": "center"
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "border": "1px solid #22C55E",
+                        "borderRadius": "4px",
+                        "padding": "2px 8px"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
+                    "type": "ia.input.button",
                     "meta": {
-                      "name": "DownloadBtn"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
+                      "name": "btn"
                     },
                     "props": {
-                      "text": "\u2193 Download",
+                      "text": "Download",
                       "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
+                        "backgroundColor": "transparent",
                         "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": {
-                  "name": "ReportRow_2"
-                },
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
                   "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
+                    "gap": "1rem",
+                    "padding": "0.75rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
                   }
                 },
                 "children": [
                   {
+                    "type": "ia.container.flex",
                     "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
+                      "name": "flex"
                     },
                     "props": {
-                      "text": "Incident",
+                      "direction": "column",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
                       "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
+                        "gap": "2px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Fault Analysis — G-3 Trip",
+                          "style": {
+                            "color": "#E2E8F0",
+                            "fontSize": "0.875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "System  ·  Jun 14, 2026",
+                          "style": {
+                            "color": "#64748B",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "PDF",
+                      "style": {
                         "color": "#EF4444",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
                         "border": "1px solid #EF4444",
                         "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
+                        "padding": "2px 8px"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
+                    "type": "ia.input.button",
                     "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
+                      "name": "btn"
                     },
                     "props": {
-                      "text": "G3 Incident Analysis Report",
+                      "text": "Download",
                       "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-13",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "892 KB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PDF",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
+                        "backgroundColor": "transparent",
                         "color": "#4F8EF7",
-                        "textAlign": "center"
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
                       }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
                     },
-                    "type": "ia.display.label",
                     "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": {
-                  "name": "ReportRow_3"
-                },
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
                   "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
+                    "gap": "1rem",
+                    "padding": "0.75rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
                   }
                 },
                 "children": [
                   {
+                    "type": "ia.container.flex",
                     "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
+                      "name": "flex"
                     },
                     "props": {
-                      "text": "Energy",
+                      "direction": "column",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
                       "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "color": "#22C55E",
-                        "border": "1px solid #22C55E",
-                        "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
+                        "gap": "2px"
                       }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Weekly KPI Report",
+                          "style": {
+                            "color": "#E2E8F0",
+                            "fontSize": "0.875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Scheduled  ·  Jun 8, 2026",
+                          "style": {
+                            "color": "#64748B",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
                     }
                   },
                   {
-                    "meta": {
-                      "name": "ReportName"
-                    },
                     "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Monthly Energy Balance",
-                      "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
                     "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-01",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2.1 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PDF",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7",
-                        "textAlign": "center"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "meta": {
-                  "name": "ReportRow_4"
-                },
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "Maintenance",
-                      "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "color": "#EAB308",
-                        "border": "1px solid #EAB308",
-                        "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Transformer TX-1 Health Check",
-                      "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-10",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "540 KB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PDF",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7",
-                        "textAlign": "center"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "meta": {
-                  "name": "ReportRow_5"
-                },
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "Protection",
-                      "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "color": "#A78BFA",
-                        "border": "1px solid #A78BFA",
-                        "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Relay Coordination Study",
-                      "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-05-28",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "6.7 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PDF",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7",
-                        "textAlign": "center"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "meta": {
-                  "name": "ReportRow_6"
-                },
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "Power Quality",
-                      "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "color": "#F97316",
-                        "border": "1px solid #F97316",
-                        "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Q2 Power Quality Report",
-                      "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-30",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "4.0 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
+                      "name": "lbl"
                     },
                     "props": {
                       "text": "XLSX",
                       "style": {
-                        "fontSize": "10px",
+                        "color": "#4F8EF7",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
                         "fontWeight": "700",
-                        "color": "#22C55E",
-                        "textAlign": "center"
+                        "border": "1px solid #4F8EF7",
+                        "borderRadius": "4px",
+                        "padding": "2px 8px"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
+                    "type": "ia.input.button",
                     "meta": {
-                      "name": "DownloadBtn"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
+                      "name": "btn"
                     },
                     "props": {
-                      "text": "\u2193 Download",
+                      "text": "Download",
                       "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
+                        "backgroundColor": "transparent",
                         "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": {
-                  "name": "ReportRow_7"
-                },
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
                   "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
+                    "gap": "1rem",
+                    "padding": "0.75rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
                   }
                 },
                 "children": [
                   {
+                    "type": "ia.container.flex",
                     "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
+                      "name": "flex"
                     },
                     "props": {
-                      "text": "Load Flow",
+                      "direction": "column",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
                       "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
+                        "gap": "2px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Frequency Deviation Log",
+                          "style": {
+                            "color": "#E2E8F0",
+                            "fontSize": "0.875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Auto-generated  ·  Jun 14, 2026",
+                          "style": {
+                            "color": "#64748B",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "CSV",
+                      "style": {
                         "color": "#06B6D4",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
                         "border": "1px solid #06B6D4",
                         "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
+                        "padding": "2px 8px"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
+                    "type": "ia.input.button",
                     "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
+                      "name": "btn"
                     },
                     "props": {
-                      "text": "Load Flow Analysis \u2014 June",
+                      "text": "Download",
                       "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-06-08",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "1.8 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PDF",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
+                        "backgroundColor": "transparent",
                         "color": "#4F8EF7",
-                        "textAlign": "center"
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
                       }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
                     },
-                    "type": "ia.display.label",
                     "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": {
-                  "name": "ReportRow_8"
-                },
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
                   "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
+                    "gap": "1rem",
+                    "padding": "0.75rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
                   }
                 },
                 "children": [
                   {
+                    "type": "ia.container.flex",
                     "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
+                      "name": "flex"
                     },
                     "props": {
-                      "text": "Protection",
+                      "direction": "column",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
                       "style": {
-                        "fontSize": "9px",
+                        "gap": "2px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Maintenance Work Order #1084",
+                          "style": {
+                            "color": "#E2E8F0",
+                            "fontSize": "0.875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Operations  ·  Jun 13, 2026",
+                          "style": {
+                            "color": "#64748B",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "PDF",
+                      "style": {
+                        "color": "#EAB308",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
                         "fontWeight": "700",
+                        "border": "1px solid #EAB308",
+                        "borderRadius": "4px",
+                        "padding": "2px 8px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
+                    "props": {
+                      "text": "Download",
+                      "style": {
+                        "backgroundColor": "transparent",
+                        "color": "#4F8EF7",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.75rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.container.flex",
+                    "meta": {
+                      "name": "flex"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
+                      "style": {
+                        "gap": "2px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Load Forecast — Q3 2026",
+                          "style": {
+                            "color": "#E2E8F0",
+                            "fontSize": "0.875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Planning  ·  Jun 10, 2026",
+                          "style": {
+                            "color": "#64748B",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "XLSX",
+                      "style": {
                         "color": "#A78BFA",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
                         "border": "1px solid #A78BFA",
                         "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
+                        "padding": "2px 8px"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
+                    "type": "ia.input.button",
                     "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
+                      "name": "btn"
                     },
                     "props": {
-                      "text": "Short Circuit Study 2026",
+                      "text": "Download",
                       "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-04-15",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "9.2 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PDF",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
+                        "backgroundColor": "transparent",
                         "color": "#4F8EF7",
-                        "textAlign": "center"
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
                       }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
                     },
-                    "type": "ia.display.label",
                     "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": {
-                  "name": "ReportRow_9"
-                },
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
                   "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
+                    "gap": "1rem",
+                    "padding": "0.75rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
                   }
                 },
                 "children": [
                   {
+                    "type": "ia.container.flex",
                     "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
+                      "name": "flex"
                     },
                     "props": {
-                      "text": "Commissioning",
+                      "direction": "column",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
                       "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "color": "#22C55E",
-                        "border": "1px solid #22C55E",
-                        "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
+                        "gap": "2px"
                       }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Monthly Compliance Report",
+                          "style": {
+                            "color": "#E2E8F0",
+                            "fontSize": "0.875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "Regulatory  ·  Jun 1, 2026",
+                          "style": {
+                            "color": "#64748B",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
                     }
                   },
                   {
-                    "meta": {
-                      "name": "ReportName"
-                    },
                     "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Generator G6 Commissioning",
-                      "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
                     "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-03-20",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "14.3 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
+                      "name": "lbl"
                     },
                     "props": {
                       "text": "PDF",
                       "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7",
-                        "textAlign": "center"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
+                        "color": "#94A3B8",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
                         "textAlign": "center",
-                        "cursor": "pointer"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "meta": {
-                  "name": "ReportRow_10"
-                },
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "Power Quality",
-                      "style": {
-                        "fontSize": "9px",
+                        "letterSpacing": "normal",
                         "fontWeight": "700",
-                        "color": "#F97316",
-                        "border": "1px solid #F97316",
+                        "border": "1px solid #94A3B8",
                         "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
+                        "padding": "2px 8px"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
+                    "type": "ia.input.button",
                     "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
+                      "name": "btn"
                     },
                     "props": {
-                      "text": "Harmonics Survey Report",
+                      "text": "Download",
                       "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-05-15",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2.7 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PDF",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
+                        "backgroundColor": "transparent",
                         "color": "#4F8EF7",
-                        "textAlign": "center"
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
+                        "border": "1px solid #1B2B4B",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "padding": "0.4375rem 1rem"
                       }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
                     },
-                    "type": "ia.display.label",
                     "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
-              },
-              {
-                "meta": {
-                  "name": "ReportRow_11"
-                },
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "row",
-                  "style": {
-                    "backgroundColor": "#0A1428",
-                    "border": "1px solid #1B2B4B",
-                    "borderRadius": "8px",
-                    "padding": "14px 16px",
-                    "alignItems": "center",
-                    "gap": "16px"
-                  }
-                },
-                "children": [
-                  {
-                    "meta": {
-                      "name": "TypeBadge"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "110px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "Compliance",
-                      "style": {
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "4px",
-                        "padding": "3px 7px",
-                        "textAlign": "center",
-                        "letterSpacing": "0.3px"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "ReportName"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "grow": 1
-                    },
-                    "props": {
-                      "text": "Annual Compliance Report 2025",
-                      "style": {
-                        "fontSize": "13px",
-                        "fontWeight": "500",
-                        "color": "#CBD5E1"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Date"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "100px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "2026-01-10",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Size"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "60px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "22.1 MB",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#94A3B8",
-                        "textAlign": "right"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "Format"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "40px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "PDF",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#4F8EF7",
-                        "textAlign": "center"
-                      }
-                    }
-                  },
-                  {
-                    "meta": {
-                      "name": "DownloadBtn"
-                    },
-                    "type": "ia.display.label",
-                    "position": {
-                      "basis": "80px",
-                      "shrink": 0
-                    },
-                    "props": {
-                      "text": "\u2193 Download",
-                      "style": {
-                        "fontSize": "11px",
-                        "fontWeight": "600",
-                        "color": "#4F8EF7",
-                        "backgroundColor": "#0D1F3C",
-                        "border": "1px solid #4F8EF7",
-                        "borderRadius": "6px",
-                        "padding": "5px 8px",
-                        "textAlign": "center",
-                        "cursor": "pointer"
-                      }
-                    }
-                  }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               }
-            ]
+            ],
+            "position": {
+              "grow": 1,
+              "shrink": 1,
+              "basis": "0%"
+            }
           }
-        ]
+        ],
+        "position": {
+          "grow": 1,
+          "shrink": 1,
+          "basis": "0%"
+        }
       }
     ]
   }

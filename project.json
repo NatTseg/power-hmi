@@ -1,6 +1,6 @@
 {
-  "title": "Power System HMI",
-  "description": "",
+  "title": "power-hmi",
+  "description": "Clearwater Energy Power System HMI",
   "parent": "",
   "enabled": true,
   "inheritable": false

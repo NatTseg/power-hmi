@@ -1,144 +1,250 @@
 {
   "custom": {},
   "params": {},
-  "props": { "defaultSize": { "width": 1440 } },
+  "props": {
+    "defaultSize": {
+      "width": 1440,
+      "height": 900
+    }
+  },
   "root": {
-    "meta": { "name": "root" },
     "type": "ia.container.flex",
+    "meta": {
+      "name": "SLDRoot"
+    },
     "props": {
       "direction": "column",
-      "style": { "backgroundColor": "#060B18", "minHeight": "100vh" }
+      "justify": "flex-start",
+      "alignItems": "stretch",
+      "style": {
+        "backgroundColor": "#060B18"
+      }
     },
     "children": [
       {
-        "meta": { "name": "NavBar" },
         "type": "ia.display.view",
-        "position": { "basis": "56px", "shrink": 0 },
-        "props": { "path": "Components/Nav" }
+        "meta": {
+          "name": "Nav"
+        },
+        "props": {
+          "path": "Components/Nav",
+          "style": {}
+        },
+        "position": {
+          "grow": 0,
+          "shrink": 0,
+          "basis": "56px"
+        }
       },
       {
-        "meta": { "name": "PageContent" },
         "type": "ia.container.flex",
-        "position": { "grow": 1 },
+        "meta": {
+          "name": "flex"
+        },
         "props": {
           "direction": "column",
+          "justify": "flex-start",
+          "alignItems": "stretch",
           "style": {
-            "padding": "28px 32px",
-            "gap": "16px",
-            "overflowY": "auto",
-            "alignItems": "center"
+            "gap": "1.25rem",
+            "padding": "1.5rem 2rem",
+            "overflow": "auto"
           }
         },
         "children": [
           {
-            "meta": { "name": "PageHeader" },
             "type": "ia.container.flex",
+            "meta": {
+              "name": "flex"
+            },
             "props": {
               "direction": "row",
+              "justify": "flex-start",
+              "alignItems": "center",
               "style": {
-                "alignItems": "center",
-                "justifyContent": "space-between",
-                "width": "100%",
-                "maxWidth": "860px"
+                "gap": "0.75rem"
               }
             },
             "children": [
               {
-                "meta": { "name": "PageTitle" },
-                "type": "ia.display.label",
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
-                  "text": "SINGLE LINE DIAGRAM",
+                  "direction": "column",
+                  "justify": "flex-start",
+                  "alignItems": "stretch",
                   "style": {
-                    "fontSize": "22px",
-                    "fontWeight": "700",
-                    "color": "#E2E8F0",
-                    "letterSpacing": "0.5px"
+                    "gap": "2px"
                   }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "SINGLE LINE DIAGRAM",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "1.375rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "138 kV / 13.8 kV Generation & Distribution",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
                 }
               },
               {
-                "meta": { "name": "SubTitle" },
                 "type": "ia.display.label",
+                "meta": {
+                  "name": "lbl"
+                },
                 "props": {
-                  "text": "GRID INTERCONNECT  ·  13.8 kV / 4.16 kV",
-                  "style": { "fontSize": "12px", "color": "#94A3B8", "letterSpacing": "0.5px" }
+                  "text": "",
+                  "style": {
+                    "color": "#E2E8F0",
+                    "fontSize": "0.875rem",
+                    "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                    "textAlign": "left",
+                    "letterSpacing": "normal"
+                  }
+                },
+                "position": {
+                  "grow": 1,
+                  "shrink": 1,
+                  "basis": "0%"
+                }
+              },
+              {
+                "type": "ia.display.label",
+                "meta": {
+                  "name": "lbl"
+                },
+                "props": {
+                  "text": "●",
+                  "style": {
+                    "color": "#22C55E",
+                    "fontSize": "0.5rem",
+                    "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                    "textAlign": "left",
+                    "letterSpacing": "normal"
+                  }
+                },
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
+              },
+              {
+                "type": "ia.display.label",
+                "meta": {
+                  "name": "lbl"
+                },
+                "props": {
+                  "text": "NOMINAL",
+                  "style": {
+                    "color": "#94A3B8",
+                    "fontSize": "0.6875rem",
+                    "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                    "textAlign": "left",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
                 }
               }
-            ]
+            ],
+            "position": {
+              "grow": 0,
+              "shrink": 0,
+              "basis": "auto"
+            }
           },
           {
-            "meta": { "name": "LegendRow" },
             "type": "ia.container.flex",
+            "meta": {
+              "name": "flex"
+            },
             "props": {
               "direction": "row",
+              "justify": "center",
+              "alignItems": "stretch",
               "style": {
-                "gap": "20px",
-                "alignItems": "center",
-                "padding": "8px 16px",
+                "padding": "1.5rem",
                 "backgroundColor": "#0D1526",
                 "border": "1px solid #1B2B4B",
-                "borderRadius": "8px",
-                "width": "100%",
-                "maxWidth": "860px"
+                "borderRadius": "12px",
+                "overflow": "auto"
               }
             },
             "children": [
               {
-                "meta": { "name": "L_CB" },
-                "type": "ia.display.label",
+                "type": "ia.display.view",
+                "meta": {
+                  "name": "SLDEmbed"
+                },
                 "props": {
-                  "text": "52  Circuit Breaker",
-                  "style": { "fontSize": "11px", "color": "#94A3B8", "fontFamily": "monospace" }
-                }
-              },
-              {
-                "meta": { "name": "L_CT" },
-                "type": "ia.display.label",
-                "props": {
-                  "text": "○  Current Transformer",
-                  "style": { "fontSize": "11px", "color": "#94A3B8" }
-                }
-              },
-              {
-                "meta": { "name": "L_PR" },
-                "type": "ia.display.label",
-                "props": {
-                  "text": "PR  Protective Relay",
-                  "style": { "fontSize": "11px", "color": "#A78BFA" }
-                }
-              },
-              {
-                "meta": { "name": "L_PM" },
-                "type": "ia.display.label",
-                "props": {
-                  "text": "PM  Power Meter",
-                  "style": { "fontSize": "11px", "color": "#06B6D4" }
-                }
-              },
-              {
-                "meta": { "name": "L_Bus" },
-                "type": "ia.display.label",
-                "props": {
-                  "text": "━━  Bus Bar",
-                  "style": { "fontSize": "11px", "color": "#4F8EF7" }
-                }
-              },
-              {
-                "meta": { "name": "L_Flow" },
-                "type": "ia.display.label",
-                "props": {
-                  "text": "▲▼  Power Flow",
-                  "style": { "fontSize": "11px", "color": "#A78BFA" }
+                  "path": "Components/SLD"
+                },
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
                 }
               }
-            ]
-          },
-          {
-            "meta": { "name": "SLDView" },
-            "type": "ia.display.view",
-            "props": { "path": "Components/SLD" }
+            ],
+            "position": {
+              "grow": 1,
+              "shrink": 1,
+              "basis": "0%"
+            }
           }
-        ]
+        ],
+        "position": {
+          "grow": 1,
+          "shrink": 1,
+          "basis": "0%"
+        }
       }
     ]
   }

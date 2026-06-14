@@ -1,310 +1,1453 @@
 {
   "custom": {},
   "params": {},
-  "props": { "defaultSize": { "width": 1440 } },
+  "props": {
+    "defaultSize": {
+      "width": 1440,
+      "height": 900
+    }
+  },
   "root": {
-    "meta": { "name": "root" },
     "type": "ia.container.flex",
+    "meta": {
+      "name": "EventsRoot"
+    },
     "props": {
       "direction": "column",
-      "style": { "backgroundColor": "#060B18", "minHeight": "100vh" }
+      "justify": "flex-start",
+      "alignItems": "stretch",
+      "style": {
+        "backgroundColor": "#060B18"
+      }
     },
     "children": [
       {
-        "meta": { "name": "NavBar" },
         "type": "ia.display.view",
-        "position": { "basis": "56px", "shrink": 0 },
-        "props": { "path": "Components/Nav" }
+        "meta": {
+          "name": "Nav"
+        },
+        "props": {
+          "path": "Components/Nav",
+          "style": {}
+        },
+        "position": {
+          "grow": 0,
+          "shrink": 0,
+          "basis": "56px"
+        }
       },
       {
-        "meta": { "name": "PageContent" },
         "type": "ia.container.flex",
-        "position": { "grow": 1 },
+        "meta": {
+          "name": "flex"
+        },
         "props": {
           "direction": "column",
-          "style": { "padding": "28px 32px", "gap": "20px", "overflowY": "auto" }
+          "justify": "flex-start",
+          "alignItems": "stretch",
+          "style": {
+            "gap": "1.25rem",
+            "padding": "1.5rem 2rem",
+            "overflow": "auto"
+          }
         },
         "children": [
           {
-            "meta": { "name": "PageTitle" },
-            "type": "ia.display.label",
+            "type": "ia.container.flex",
+            "meta": {
+              "name": "flex"
+            },
             "props": {
-              "text": "EVENTS",
-              "style": { "fontSize": "22px", "fontWeight": "700", "color": "#E2E8F0", "letterSpacing": "0.5px" }
+              "direction": "column",
+              "justify": "flex-start",
+              "alignItems": "stretch",
+              "style": {}
+            },
+            "children": [
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.container.flex",
+                    "meta": {
+                      "name": "flex"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
+                      "style": {
+                        "gap": "2px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "EVENTS",
+                          "style": {
+                            "color": "#E2E8F0",
+                            "fontSize": "1.375rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "System alerts and operational log",
+                          "style": {
+                            "color": "#64748B",
+                            "fontSize": "0.75rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "meta": {
+                      "name": "flex"
+                    },
+                    "props": {
+                      "direction": "row",
+                      "justify": "flex-start",
+                      "alignItems": "stretch",
+                      "style": {
+                        "gap": "0.5rem"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "1 CRITICAL",
+                          "style": {
+                            "color": "#060B18",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700",
+                            "backgroundColor": "#EF4444",
+                            "borderRadius": "20px",
+                            "padding": "4px 14px"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "2 HIGH",
+                          "style": {
+                            "color": "#060B18",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700",
+                            "backgroundColor": "#EAB308",
+                            "borderRadius": "20px",
+                            "padding": "4px 14px"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "1 WARNING",
+                          "style": {
+                            "color": "#EAB308",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700",
+                            "backgroundColor": "#EAB30844",
+                            "borderRadius": "20px",
+                            "padding": "4px 14px"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "2 INFO",
+                          "style": {
+                            "color": "#94A3B8",
+                            "fontSize": "0.6875rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700",
+                            "backgroundColor": "#111E34",
+                            "borderRadius": "20px",
+                            "padding": "4px 14px"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
+              }
+            ],
+            "position": {
+              "grow": 0,
+              "shrink": 0,
+              "basis": "auto"
             }
           },
           {
-            "meta": { "name": "SummaryBar" },
             "type": "ia.container.flex",
-            "props": { "direction": "row", "style": { "gap": "12px" } },
-            "children": [
-              {
-                "meta": { "name": "SumCard_Critical" },
-                "type": "ia.container.flex",
-                "position": { "grow": 1 },
-                "props": {
-                  "direction": "column",
-                  "style": { "backgroundColor": "#3B0A0A", "border": "1px solid #EF4444", "borderRadius": "10px", "padding": "16px", "gap": "4px", "alignItems": "center" }
-                },
-                "children": [
-                  { "meta": { "name": "Count" }, "type": "ia.display.label", "props": { "text": "3", "style": { "fontSize": "28px", "fontWeight": "700", "color": "#EF4444" } } },
-                  { "meta": { "name": "Label" }, "type": "ia.display.label", "props": { "text": "Critical", "style": { "fontSize": "11px", "color": "#94A3B8" } } }
-                ]
-              },
-              {
-                "meta": { "name": "SumCard_Warning" },
-                "type": "ia.container.flex",
-                "position": { "grow": 1 },
-                "props": {
-                  "direction": "column",
-                  "style": { "backgroundColor": "#2D1F00", "border": "1px solid #EAB308", "borderRadius": "10px", "padding": "16px", "gap": "4px", "alignItems": "center" }
-                },
-                "children": [
-                  { "meta": { "name": "Count" }, "type": "ia.display.label", "props": { "text": "4", "style": { "fontSize": "28px", "fontWeight": "700", "color": "#EAB308" } } },
-                  { "meta": { "name": "Label" }, "type": "ia.display.label", "props": { "text": "Warning", "style": { "fontSize": "11px", "color": "#94A3B8" } } }
-                ]
-              },
-              {
-                "meta": { "name": "SumCard_Caution" },
-                "type": "ia.container.flex",
-                "position": { "grow": 1 },
-                "props": {
-                  "direction": "column",
-                  "style": { "backgroundColor": "#1A1A00", "border": "1px solid #F59E0B", "borderRadius": "10px", "padding": "16px", "gap": "4px", "alignItems": "center" }
-                },
-                "children": [
-                  { "meta": { "name": "Count" }, "type": "ia.display.label", "props": { "text": "4", "style": { "fontSize": "28px", "fontWeight": "700", "color": "#F59E0B" } } },
-                  { "meta": { "name": "Label" }, "type": "ia.display.label", "props": { "text": "Caution", "style": { "fontSize": "11px", "color": "#94A3B8" } } }
-                ]
-              },
-              {
-                "meta": { "name": "SumCard_Info" },
-                "type": "ia.container.flex",
-                "position": { "grow": 1 },
-                "props": {
-                  "direction": "column",
-                  "style": { "backgroundColor": "#0A1428", "border": "1px solid #1B2B4B", "borderRadius": "10px", "padding": "16px", "gap": "4px", "alignItems": "center" }
-                },
-                "children": [
-                  { "meta": { "name": "Count" }, "type": "ia.display.label", "props": { "text": "4", "style": { "fontSize": "28px", "fontWeight": "700", "color": "#4F8EF7" } } },
-                  { "meta": { "name": "Label" }, "type": "ia.display.label", "props": { "text": "Info", "style": { "fontSize": "11px", "color": "#94A3B8" } } }
-                ]
-              }
-            ]
-          },
-          {
-            "meta": { "name": "EventsList" },
-            "type": "ia.container.flex",
+            "meta": {
+              "name": "flex"
+            },
             "props": {
               "direction": "column",
+              "justify": "flex-start",
+              "alignItems": "stretch",
               "style": {
+                "gap": "0",
                 "backgroundColor": "#0D1526",
                 "border": "1px solid #1B2B4B",
-                "borderRadius": "12px",
-                "gap": "0px",
-                "padding": "0px",
+                "borderRadius": "10px",
                 "overflow": "hidden"
               }
             },
             "children": [
               {
-                "meta": { "name": "ColHeader" },
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
-                  "style": { "padding": "10px 16px", "gap": "16px", "borderBottom": "1px solid #1B2B4B", "overflow": "hidden" }
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.5rem 1rem",
+                    "backgroundColor": "#111E34"
+                  }
                 },
                 "children": [
-                  { "meta": { "name": "H_PRIORITY" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "PRIORITY", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } },
-                  { "meta": { "name": "H_TIMESTAMP" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "TIMESTAMP", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } },
-                  { "meta": { "name": "H_EQUIPMENT" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "EQUIPMENT", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } },
-                  { "meta": { "name": "H_MESSAGE" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "MESSAGE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } },
-                  { "meta": { "name": "H_STATUS" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "STATUS", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#94A3B8", "letterSpacing": "1px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Timestamp",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.5rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1px",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Level",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.5rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1px",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Source",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.5rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1px",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Event",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.5rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1px",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_0" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#3B0A0A", "borderBottom": "1px solid #2A0707", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CRITICAL", "style": { "backgroundColor": "#EF4444", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 14:32", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "INV-A3", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EF4444" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Solar inverter fault — DC overcurrent protection trip", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "00:14:02",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "CRITICAL",
+                      "style": {
+                        "color": "#060B18",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#EF4444",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "G-3",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Generator G-3 (Steam) protection trip — over-current relay ANSI 51",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_1" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#3B0A0A", "borderBottom": "1px solid #2A0707", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CRITICAL", "style": { "backgroundColor": "#EF4444", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 14:29", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "WTG-N4", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EF4444" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Wind turbine emergency stop — vibration limit exceeded", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "00:13:58",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "HIGH",
+                      "style": {
+                        "color": "#060B18",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#EAB308",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "G-3",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "G-3 stator temperature exceeded 180°C setpoint",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_2" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#3B0A0A", "borderBottom": "1px solid #2A0707", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CRITICAL", "style": { "backgroundColor": "#EF4444", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 11:07", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "GRID-TIE", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EF4444" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Grid voltage sag 0.93 pu — protection relay response triggered", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "00:12:44",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "HIGH",
+                      "style": {
+                        "color": "#060B18",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#EAB308",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "BUS-138",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "138 kV bus voltage dip 8% below nominal (138 → 126 kV)",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_3" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#2D1F00", "borderBottom": "1px solid #201600", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "WARNING", "style": { "backgroundColor": "#EAB308", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 13:55", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "Array B", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EAB308" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Output 15% below irradiance forecast — possible soiling or shading", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "00:12:44",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "AUTO",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#4F8EF7",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "SYSTEM",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "AGC increased G-4 and G-5 loading to compensate G-3 trip",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_4" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#2D1F00", "borderBottom": "1px solid #201600", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "WARNING", "style": { "backgroundColor": "#EAB308", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 13:20", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "INV-C2", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EAB308" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Inverter running at 97% thermal capacity — approaching derating threshold", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "00:10:15",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "WARNING",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#EAB308",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "G-5",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "G-5 derate active — governor limiting to 55% capacity",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_5" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#2D1F00", "borderBottom": "1px solid #201600", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "WARNING", "style": { "backgroundColor": "#EAB308", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 12:48", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "WTG-S2", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EAB308" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Gearbox temperature high — 88°C (limit 95°C)", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "00:08:30",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "INFO",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#111E34",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "LOAD-D",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Load-D demand forecast updated: +1.2 MW for peak hour",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_6" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#2D1F00", "borderBottom": "1px solid #201600", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "WARNING", "style": { "backgroundColor": "#EAB308", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 10:15", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "TX-GRID", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#EAB308" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Grid interconnect transformer oil temperature high — 91°C (limit 95°C)", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "00:05:00",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "INFO",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#111E34",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "WEATHER",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Wind advisory: 45 mph gusts — cooling tower drift expected",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_7" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#1A1A00", "borderBottom": "1px solid #141400", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CAUTION", "style": { "backgroundColor": "#F59E0B", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 14:01", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "A-Row12", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#F59E0B" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "String-level monitoring communication loss — Array A, Row 12", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "00:02:11",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "HIGH",
+                      "style": {
+                        "color": "#060B18",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#EAB308",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "G-3",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "G-3 field exciter fault confirmed — maintenance dispatched",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
-                "meta": { "name": "EventRow_8" },
                 "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#1A1A00", "borderBottom": "1px solid #141400", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {
+                    "gap": "1rem",
+                    "padding": "0.625rem 1rem",
+                    "borderBottom": "1px solid #1B2B4B"
+                  }
+                },
                 "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CAUTION", "style": { "backgroundColor": "#F59E0B", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 13:44", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "WTG-S3", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#F59E0B" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Blade pitch actuator response slow — yaw control degraded", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACTIVE", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EF4444", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
-              },
-              {
-                "meta": { "name": "EventRow_9" },
-                "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#1A1A00", "borderBottom": "1px solid #141400", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
-                "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CAUTION", "style": { "backgroundColor": "#F59E0B", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 12:30", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "Array C", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#F59E0B" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Soiling loss estimated >8% — panel cleaning scheduled for tomorrow", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
-              },
-              {
-                "meta": { "name": "EventRow_10" },
-                "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#1A1A00", "borderBottom": "1px solid #141400", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
-                "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "CAUTION", "style": { "backgroundColor": "#F59E0B", "color": "#060B18", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 09:12", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "SCADA", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#F59E0B" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Wind forecast model deviation >20% — recalibrating against observed data", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "ACK", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#EAB308", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
-              },
-              {
-                "meta": { "name": "EventRow_11" },
-                "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#0A1428", "borderBottom": "1px solid #0E1A35", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
-                "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "INFO", "style": { "backgroundColor": "#2D4A7A", "color": "#94A3B8", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 08:00", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "WTG-W1", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#64748B" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Scheduled maintenance complete — turbine returned to service", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "CLEARED", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#22C55E", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
-              },
-              {
-                "meta": { "name": "EventRow_12" },
-                "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#0A1428", "borderBottom": "1px solid #0E1A35", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
-                "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "INFO", "style": { "backgroundColor": "#2D4A7A", "color": "#94A3B8", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 07:55", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "System", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#64748B" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Daily generation report generated and dispatched to operations team", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "CLEARED", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#22C55E", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
-              },
-              {
-                "meta": { "name": "EventRow_13" },
-                "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#0A1428", "borderBottom": "1px solid #0E1A35", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
-                "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "INFO", "style": { "backgroundColor": "#2D4A7A", "color": "#94A3B8", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 13 · 06:00", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "GRID", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#64748B" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Grid interconnect sync check passed — all protection limits normal", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "CLEARED", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#22C55E", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
-              },
-              {
-                "meta": { "name": "EventRow_14" },
-                "type": "ia.container.flex",
-                "props": { "direction": "row", "style": { "backgroundColor": "#0A1428", "padding": "11px 16px", "alignItems": "center", "gap": "16px", "overflow": "hidden", "flexShrink": "0" } },
-                "children": [
-                  { "meta": { "name": "PriBadge" }, "type": "ia.display.label", "position": { "basis": "84px", "shrink": 0 }, "props": { "text": "INFO", "style": { "backgroundColor": "#2D4A7A", "color": "#94A3B8", "fontSize": "9px", "fontWeight": "700", "borderRadius": "4px", "padding": "3px 6px", "textAlign": "center", "letterSpacing": "0.5px" } } },
-                  { "meta": { "name": "Time" }, "type": "ia.display.label", "position": { "basis": "140px", "shrink": 0 }, "props": { "text": "Jun 12 · 22:10", "style": { "fontSize": "11px", "color": "#64748B", "fontFamily": "monospace" } } },
-                  { "meta": { "name": "Equip" }, "type": "ia.display.label", "position": { "basis": "110px", "shrink": 0 }, "props": { "text": "INV-B3", "style": { "fontSize": "12px", "fontWeight": "700", "color": "#64748B" } } },
-                  { "meta": { "name": "Msg" }, "type": "ia.display.label", "position": { "grow": 1 }, "props": { "text": "Firmware update v4.2.1 applied successfully — inverter restarted", "style": { "fontSize": "12px", "color": "#CBD5E1" } } },
-                  { "meta": { "name": "Status" }, "type": "ia.display.label", "position": { "basis": "70px", "shrink": 0 }, "props": { "text": "CLEARED", "style": { "fontSize": "10px", "fontWeight": "700", "color": "#22C55E", "textAlign": "right", "letterSpacing": "0.5px" } } }
-                ]
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Jun 13 · 23:55:02",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "140px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "INFO",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "center",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "backgroundColor": "#111E34",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "72px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "SCADA",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "80px"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Gateway heartbeat OK · 48 tags updated",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.8125rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               }
-            ]
+            ],
+            "position": {
+              "grow": 1,
+              "shrink": 1,
+              "basis": "0%"
+            }
           }
-        ]
+        ],
+        "position": {
+          "grow": 1,
+          "shrink": 1,
+          "basis": "0%"
+        }
       }
     ]
   }
